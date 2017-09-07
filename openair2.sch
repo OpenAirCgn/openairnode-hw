@@ -424,10 +424,6 @@ F 3 "" H 4800 2350 60  0000 C CNN
 	1    4800 2350
 	1    0    0    -1  
 $EndComp
-Text GLabel 9250 1950 2    60   Input ~ 0
-U2RXD
-Text GLabel 9250 2050 2    60   Output ~ 0
-U2TXD
 $Comp
 L R R15
 U 1 1 5954FC4E
@@ -933,18 +929,14 @@ $EndComp
 $Comp
 L GND #PWR021
 U 1 1 59774BBA
-P 5300 1400
-F 0 "#PWR021" H 5325 1450 60  0001 C CNN
-F 1 "GND" H 5300 1250 60  0000 C CNN
-F 2 "" H 5300 1400 60  0000 C CNN
-F 3 "" H 5300 1400 60  0000 C CNN
-	1    5300 1400
+P 5250 1400
+F 0 "#PWR021" H 5275 1450 60  0001 C CNN
+F 1 "GND" H 5250 1250 60  0000 C CNN
+F 2 "" H 5250 1400 60  0000 C CNN
+F 3 "" H 5250 1400 60  0000 C CNN
+	1    5250 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 5200 1200 0    60   Input ~ 0
-U2TXD
-Text GLabel 5200 1300 0    60   Input ~ 0
-U2RXD
 $Comp
 L CONN_4 I2C1
 U 1 1 59775670
@@ -1703,16 +1695,6 @@ Wire Wire Line
 Wire Wire Line
 	10200 5450 10450 5450
 Wire Wire Line
-	5300 1100 5300 1400
-Wire Wire Line
-	5350 900  5300 900 
-Wire Wire Line
-	5300 900  5300 850 
-Wire Wire Line
-	5350 1000 5150 1000
-Wire Wire Line
-	5150 1000 5150 850 
-Wire Wire Line
 	3900 1000 4500 1000
 Wire Wire Line
 	3900 1000 3900 900 
@@ -1724,8 +1706,6 @@ Wire Wire Line
 	3800 1200 4500 1200
 Wire Wire Line
 	3800 1300 4500 1300
-Wire Wire Line
-	5350 1100 5300 1100
 Wire Wire Line
 	5200 1200 5350 1200
 Wire Wire Line
@@ -2060,4 +2040,24 @@ Text GLabel 6250 1550 0    60   BiDi ~ 0
 RFM_SEL
 Text GLabel 6250 1650 0    60   BiDi ~ 0
 RFM_RST
+Wire Wire Line
+	5300 850  5300 1100
+Wire Wire Line
+	5300 1100 5350 1100
+Wire Wire Line
+	5350 1000 5250 1000
+Wire Wire Line
+	5250 1000 5250 1400
+Wire Wire Line
+	5150 850  5150 900 
+Wire Wire Line
+	5150 900  5350 900 
+Text GLabel 5200 1200 0    60   Output ~ 0
+U2RXD
+Text GLabel 5200 1300 0    60   Input ~ 0
+U2TXD
+Text GLabel 9250 1950 2    60   Output ~ 0
+U2TXD
+Text GLabel 9250 2050 2    60   Input ~ 0
+U2RXD
 $EndSCHEMATC
