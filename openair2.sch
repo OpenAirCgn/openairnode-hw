@@ -1074,10 +1074,6 @@ F 3 "" H 6750 6150 60  0000 C CNN
 	1    6750 6150
 	1    0    0    -1  
 $EndComp
-Text GLabel 6250 5400 0    60   Input ~ 0
-MOSI
-Text GLabel 6250 5500 0    60   Output ~ 0
-MISO
 Text GLabel 6250 5600 0    60   Input ~ 0
 SCK
 Text GLabel 6250 5700 0    60   Input ~ 0
@@ -1304,7 +1300,6 @@ SDA
 Text GLabel 10050 2250 2    60   Input ~ 0
 SCL
 NoConn ~ 8950 1450
-NoConn ~ 8950 3250
 $Comp
 L ESP-WROOM-32 IC1
 U 1 1 59469FFC
@@ -1967,7 +1962,7 @@ U 1 1 59AF5DB5
 P 1150 4200
 F 0 "TP8" H 1150 4100 60  0000 C CNN
 F 1 "Test_Point" H 1150 4300 60  0000 C CNN
-F 2 "" H 1150 4200 60  0000 C CNN
+F 2 "everykey:TESTPOINT_1mm" H 1150 4200 60  0001 C CNN
 F 3 "" H 1150 4200 60  0000 C CNN
 	1    1150 4200
 	0    1    1    0   
@@ -1976,16 +1971,12 @@ Wire Wire Line
 	9300 5300 9600 5300
 NoConn ~ 9600 5400
 NoConn ~ 9600 5500
-Text GLabel 9250 1850 2    60   Output ~ 0
-MOSI
 Text GLabel 9250 2650 2    60   Output ~ 0
 SCK
 Text GLabel 9250 2950 2    60   Output ~ 0
 RFM_RST
 Text GLabel 9250 3050 2    60   Output ~ 0
 RFM_SEL
-Text GLabel 9250 2750 2    60   Input ~ 0
-MISO
 Text GLabel 9250 2350 2    60   BiDi ~ 0
 RFM_DIO0
 Text GLabel 9250 2450 2    60   BiDi ~ 0
@@ -1998,7 +1989,7 @@ U 1 1 59B03239
 P 6600 1300
 F 0 "P6" H 6600 1750 60  0000 C CNN
 F 1 "CONN_8" H 6600 850 60  0000 C CNN
-F 2 "" H 6600 1550 60  0000 C CNN
+F 2 "everykey:HEADER-2x04-2.54" H 6600 1550 60  0001 C CNN
 F 3 "" H 6600 1550 60  0000 C CNN
 	1    6600 1300
 	-1   0    0    -1  
@@ -2051,10 +2042,22 @@ Text GLabel 6250 1250 0    60   BiDi ~ 0
 RFM_DIO1
 Text GLabel 6250 1350 0    60   BiDi ~ 0
 RFM_DIO0
-Text GLabel 6250 1450 0    60   BiDi ~ 0
-RFM_RST
+Text GLabel 9250 1850 2    60   Input ~ 0
+MISO
+Text GLabel 9250 2750 2    60   Output ~ 0
+MOSI
+Text GLabel 6250 5400 0    60   Output ~ 0
+MISO
+Text GLabel 6250 5500 0    60   Input ~ 0
+MOSI
+Wire Wire Line
+	8950 3250 9250 3250
+Text GLabel 9250 3250 2    60   Input ~ 0
+EXT_IN
+Text GLabel 6250 1450 0    60   Output ~ 0
+EXT_IN
 Text GLabel 6250 1550 0    60   BiDi ~ 0
 RFM_SEL
 Text GLabel 6250 1650 0    60   BiDi ~ 0
-SCK
+RFM_RST
 $EndSCHEMATC
