@@ -1283,10 +1283,6 @@ F 3 "" H 1700 2100 60  0000 C CNN
 	1    1700 2100
 	0    1    1    0   
 $EndComp
-Text GLabel 9250 1550 2    60   Input ~ 0
-VRED
-Text GLabel 9250 1650 2    60   Input ~ 0
-VOX
 Text GLabel 10050 2150 2    60   Input ~ 0
 SDA
 Text GLabel 10050 2250 2    60   Input ~ 0
@@ -1873,10 +1869,6 @@ Wire Wire Line
 	1200 6250 1200 5200
 Connection ~ 1200 5200
 Wire Wire Line
-	8950 1550 9250 1550
-Wire Wire Line
-	8950 1650 9250 1650
-Wire Wire Line
 	3950 3150 3950 3150
 Connection ~ 3950 3150
 Wire Wire Line
@@ -1919,10 +1911,6 @@ Wire Wire Line
 	8950 2950 9250 2950
 Wire Wire Line
 	8950 1850 9250 1850
-Wire Wire Line
-	8950 3150 9250 3150
-Text GLabel 9250 3150 2    60   Input ~ 0
-SD_~DET
 $Comp
 L PWR_FLAG #FLAG028
 U 1 1 59AF569F
@@ -2030,10 +2018,6 @@ Text GLabel 6250 5400 0    60   Output ~ 0
 MISO
 Text GLabel 6250 5500 0    60   Input ~ 0
 MOSI
-Wire Wire Line
-	8950 3250 9250 3250
-Text GLabel 9250 3250 2    60   Input ~ 0
-EXT_IN
 Text GLabel 6250 1450 0    60   Output ~ 0
 EXT_IN
 Text GLabel 6250 1550 0    60   BiDi ~ 0
@@ -2060,4 +2044,20 @@ Text GLabel 9250 1950 2    60   Output ~ 0
 U2TXD
 Text GLabel 9250 2050 2    60   Input ~ 0
 U2RXD
+Wire Wire Line
+	8950 3250 9250 3250
+Wire Wire Line
+	8950 1550 9250 1550
+Wire Wire Line
+	8950 1650 9250 1650
+Wire Wire Line
+	8950 3150 9250 3150
+Text GLabel 9250 1650 2    60   Input ~ 0
+SD_~DET
+Text GLabel 9250 1550 2    60   Input ~ 0
+EXT_IN
+Text GLabel 9250 3150 2    60   Input ~ 0
+VOX
+Text GLabel 9250 3250 2    60   Input ~ 0
+VRED
 $EndSCHEMATC
