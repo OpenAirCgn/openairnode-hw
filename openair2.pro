@@ -1,4 +1,4 @@
-update=Sonntag, 18. Juni 2017 'u36' 17:36:18
+update=2018 December 21, Friday 19:14:25
 version=1
 last_client=kicad
 [pcbnew]
@@ -30,3 +30,13 @@ version=1
 LibDir=
 [eeschema/libraries]
 LibName1=/Users/matthias/Development/Kicad/Libraries/everykey
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
