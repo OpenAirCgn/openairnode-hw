@@ -1,4 +1,4 @@
-update=2018 December 21, Friday 19:14:25
+update=2019 September 02, Monday 18:02:21
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,11 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[eeschema]
-version=1
-LibDir=
-[eeschema/libraries]
-LibName1=/Users/matthias/Development/Kicad/Libraries/everykey
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -40,3 +35,6 @@ NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
+[eeschema]
+version=1
+LibDir=
