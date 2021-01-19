@@ -2,7 +2,7 @@
 
 
 kikit panelize grid \
-	-s 3 \
+	-s 6 \
 	-g 1 4 \
 	--railsTb 10 \
 	--railsLr 10 \
