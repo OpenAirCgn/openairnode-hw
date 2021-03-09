@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:openair2-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L everykey:GND #PWR01
+L openair2-rescue:GND-everykey #PWR01
 U 1 1 5946A518
 P 2300 2200
 F 0 "#PWR01" H 2325 2250 60  0001 C CNN
@@ -26,7 +25,7 @@ F 3 "" H 2300 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #GND02
+L openair2-rescue:GND-everykey #GND02
 U 1 1 5946A762
 P 5850 3450
 F 0 "#GND02" H 5875 3500 60  0001 C CNN
@@ -37,53 +36,69 @@ F 3 "" H 5850 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C1
+L openair2-rescue:C-everykey C1
 U 1 1 5946A874
 P 5850 2900
 F 0 "C1" H 5700 3000 50  0000 L CNN
 F 1 "0u1" H 5700 2800 50  0000 L CNN
 F 2 "everykey:0603" H 5888 2750 50  0001 C CNN
 F 3 "" H 5850 2900 50  0000 C CNN
+F 4 "B" H 5850 2900 50  0001 C CNN "jlc extended"
+F 5 "C14663" H 5850 2900 50  0001 C CNN "jlc#"
+F 6 "YAGEO" H 5850 2900 50  0001 C CNN "manuf"
+F 7 "CC0603KRX7R9BB104" H 5850 2900 50  0001 C CNN "manuf#"
 	1    5850 2900
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5950 2750
 NoConn ~ 5950 2650
 $Comp
-L everykey:C C3
+L openair2-rescue:C-everykey C3
 U 1 1 594CFA92
 P 2600 1900
 F 0 "C3" H 2500 2000 50  0000 L CNN
 F 1 "10u" H 2450 1800 50  0000 L CNN
 F 2 "everykey:0805" H 2638 1750 50  0001 C CNN
 F 3 "" H 2600 1900 50  0000 C CNN
+F 4 "B" H 2600 1900 50  0001 C CNN "jlc extended"
+F 5 "C15850" H 2600 1900 50  0001 C CNN "jlc#"
+F 6 "Samsung Electro-Mechanics" H 2600 1900 50  0001 C CNN "manuf"
+F 7 "CL21A106KAYNNNE" H 2600 1900 50  0001 C CNN "manuf#"
 	1    2600 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:L L1
+L openair2-rescue:L-everykey L1
 U 1 1 594CFEEC
 P 3900 1500
 F 0 "L1" H 3850 1600 50  0000 L CNN
 F 1 "2.2u 1A BDCD002520122R2MS1" H 3750 1450 50  0000 L CNN
 F 2 "everykey:1008-2520" H 3938 1350 50  0001 C CNN
 F 3 "" H 3900 1500 50  0000 C CNN
+F 4 "E" H 3900 1500 50  0001 C CNN "jlc extended"
+F 5 "C779529" H 3900 1500 50  0001 C CNN "jlc#"
+F 6 "Chilisin Elec" H 3900 1500 50  0001 C CNN "manuf"
+F 7 "BDCD002520122R2MS1" H 3900 1500 50  0001 C CNN "manuf#"
 	1    3900 1500
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C4
+L openair2-rescue:C-everykey C4
 U 1 1 594D0B12
 P 4200 1900
 F 0 "C4" H 4225 2000 50  0000 L CNN
 F 1 "10u" H 4225 1800 50  0000 L CNN
 F 2 "everykey:0805" H 4238 1750 50  0001 C CNN
 F 3 "" H 4200 1900 50  0000 C CNN
+F 4 "B" H 4200 1900 50  0001 C CNN "jlc extended"
+F 5 "C15850" H 4200 1900 50  0001 C CNN "jlc#"
+F 6 "Samsung Electro-Mechanics" H 4200 1900 50  0001 C CNN "manuf"
+F 7 "CL21A106KAYNNNE" H 4200 1900 50  0001 C CNN "manuf#"
 	1    4200 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:3.3V #PWR03
+L openair2-rescue:3.3V-everykey #PWR03
 U 1 1 594D5702
 P 4200 1350
 F 0 "#PWR03" H 4225 1300 60  0001 C CNN
@@ -94,7 +109,7 @@ F 3 "" H 4200 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:3.3V #PWR04
+L openair2-rescue:3.3V-everykey #PWR04
 U 1 1 594D58E7
 P 5850 1100
 F 0 "#PWR04" H 5875 1050 60  0001 C CNN
@@ -109,73 +124,93 @@ Note: IO32 and IO33 might be internally\nconnected to 32kHz crystal. IO0, IO2 an
 Text Notes 2400 900  2    60   ~ 0
 POWER
 $Comp
-L everykey:R R11
+L openair2-rescue:R-everykey R11
 U 1 1 594E8EF9
 P 2400 3800
 F 0 "R11" H 2400 4000 50  0000 C CNN
 F 1 "27" H 2400 3900 50  0000 C CNN
 F 2 "everykey:0603" H 2400 3800 60  0001 C CNN
 F 3 "" H 2400 3800 60  0000 C CNN
+F 4 "C22966" H 2400 3800 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 2400 3800 50  0001 C CNN "manuf"
+F 6 "0603WAF2700T5E" H 2400 3800 50  0001 C CNN "manuf#"
+F 7 "B" H 2400 3800 50  0001 C CNN "jlc extended"
 	1    2400 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R12
+L openair2-rescue:R-everykey R12
 U 1 1 594E8F50
 P 2400 3900
 F 0 "R12" H 2400 3800 50  0000 C CNN
 F 1 "27" H 2400 3700 50  0000 C CNN
 F 2 "everykey:0603" H 2400 3900 60  0001 C CNN
 F 3 "" H 2400 3900 60  0000 C CNN
+F 4 "C22966" H 2400 3900 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 2400 3900 50  0001 C CNN "manuf"
+F 6 "0603WAF2700T5E" H 2400 3900 50  0001 C CNN "manuf#"
+F 7 "B" H 2400 3900 50  0001 C CNN "jlc extended"
 	1    2400 3900
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C8
+L openair2-rescue:C-everykey C8
 U 1 1 594E8FC1
 P 1750 4100
 F 0 "C8" H 1700 4200 50  0000 L CNN
 F 1 "47p" H 1700 4000 50  0000 L CNN
 F 2 "everykey:0603" H 1788 3950 50  0001 C CNN
 F 3 "" H 1750 4100 50  0000 C CNN
+F 4 "B" H 1750 4100 50  0001 C CNN "jlc extended"
+F 5 "C1671" H 1750 4100 50  0001 C CNN "jlc#"
+F 6 "Samsung Electro-Mechanics" H 1750 4100 50  0001 C CNN "manuf"
+F 7 "CL10C470JB8NNNC" H 1750 4100 50  0001 C CNN "manuf#"
 	1    1750 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C7
+L openair2-rescue:C-everykey C7
 U 1 1 594E902B
 P 1600 4100
 F 0 "C7" H 1550 4200 50  0000 L CNN
 F 1 "47p" H 1550 4000 50  0000 L CNN
 F 2 "everykey:0603" H 1638 3950 50  0001 C CNN
 F 3 "" H 1600 4100 50  0000 C CNN
+F 4 "B" H 1600 4100 50  0001 C CNN "jlc extended"
+F 5 "C1671" H 1600 4100 50  0001 C CNN "jlc#"
+F 6 "Samsung Electro-Mechanics" H 1600 4100 50  0001 C CNN "manuf"
+F 7 "CL10C470JB8NNNC" H 1600 4100 50  0001 C CNN "manuf#"
 	1    1600 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:L L2
+L openair2-rescue:L-everykey L2
 U 1 1 594E9087
 P 1750 3100
 F 0 "L2" H 1700 3200 50  0000 L CNN
 F 1 "FERRITE" H 1600 3050 50  0000 L CNN
 F 2 "everykey:0603" H 1788 2950 50  0001 C CNN
-F 3 "" H 1750 3100 50  0000 C CNN
+F 3 "???" H 1750 3100 50  0000 C CNN
 	1    1750 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C9
+L openair2-rescue:C-everykey C9
 U 1 1 594E90FB
 P 1900 4100
 F 0 "C9" H 1850 4200 50  0000 L CNN
 F 1 "0u1" H 1850 4000 50  0000 L CNN
 F 2 "everykey:0603" H 1938 3950 50  0001 C CNN
 F 3 "" H 1900 4100 50  0000 C CNN
+F 4 "B" H 1900 4100 50  0001 C CNN "jlc extended"
+F 5 "C14663" H 1900 4100 50  0001 C CNN "jlc#"
+F 6 "YAGEO" H 1900 4100 50  0001 C CNN "manuf"
+F 7 "CC0603KRX7R9BB104" H 1900 4100 50  0001 C CNN "manuf#"
 	1    1900 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #PWR05
+L openair2-rescue:GND-everykey #PWR05
 U 1 1 594E9E7B
 P 1300 4400
 F 0 "#PWR05" H 1325 4450 60  0001 C CNN
@@ -186,46 +221,62 @@ F 3 "" H 1300 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C10
+L openair2-rescue:C-everykey C10
 U 1 1 594EA6BF
 P 2050 4100
 F 0 "C10" H 2000 4200 50  0000 L CNN
 F 1 "4u7" H 2000 4000 50  0000 L CNN
 F 2 "everykey:0603" H 2088 3950 50  0001 C CNN
 F 3 "" H 2050 4100 50  0000 C CNN
+F 4 "B" H 2050 4100 50  0001 C CNN "jlc extended"
+F 5 "C19666" H 2050 4100 50  0001 C CNN "jlc#"
+F 6 "Samsung Electro-Mechanics" H 2050 4100 50  0001 C CNN "manuf"
+F 7 "CL10A475KO8NNNC" H 2050 4100 50  0001 C CNN "manuf#"
 	1    2050 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C11
+L openair2-rescue:C-everykey C11
 U 1 1 594EA720
 P 2200 4100
 F 0 "C11" H 2150 4200 50  0000 L CNN
 F 1 "0u1" H 2150 4000 50  0000 L CNN
 F 2 "everykey:0603" H 2238 3950 50  0001 C CNN
 F 3 "" H 2200 4100 50  0000 C CNN
+F 4 "B" H 2200 4100 50  0001 C CNN "jlc extended"
+F 5 "C14663" H 2200 4100 50  0001 C CNN "jlc#"
+F 6 "YAGEO" H 2200 4100 50  0001 C CNN "manuf"
+F 7 "CC0603KRX7R9BB104" H 2200 4100 50  0001 C CNN "manuf#"
 	1    2200 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:C C6
+L openair2-rescue:C-everykey C6
 U 1 1 594EA783
 P 1450 4100
 F 0 "C6" H 1400 4200 50  0000 L CNN
 F 1 "10n" H 1400 4000 50  0000 L CNN
 F 2 "everykey:0603" H 1488 3950 50  0001 C CNN
 F 3 "" H 1450 4100 50  0000 C CNN
+F 4 "B" H 1450 4100 50  0001 C CNN "jlc extended"
+F 5 "C57112" H 1450 4100 50  0001 C CNN "jlc#"
+F 6 "Guangdong Fenghua Advanced Tech" H 1450 4100 50  0001 C CNN "manuf"
+F 7 "0603B103K500NT" H 1450 4100 50  0001 C CNN "manuf#"
 	1    1450 4100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:USB_MICRO USB1
+L openair2-rescue:USB_MICRO-everykey USB1
 U 1 1 5952231C
 P 900 4000
 F 0 "USB1" H 700 4400 50  0000 C CNN
 F 1 "USB" H 900 3600 50  0000 C CNN
 F 2 "everykey:USB-MICRO-B" H 900 4000 60  0001 C CNN
-F 3 "" H 900 4000 60  0000 C CNN
+F 3 "not compatible!" H 900 4000 60  0000 C CNN
+F 4 "E" H 900 4000 50  0001 C CNN "jlc extended"
+F 5 "C145783" H 900 4000 50  0001 C CNN "jlc#"
+F 6 "Korean Hroparts Elec" H 900 4000 50  0001 C CNN "manuf"
+F 7 "U-F-M5SS-W-1" H 900 4000 50  0001 C CNN "manuf#"
 	1    900  4000
 	1    0    0    -1  
 $EndComp
@@ -233,7 +284,7 @@ NoConn ~ 1100 4000
 Text Notes 1750 2850 0    60   ~ 0
 USB
 $Comp
-L everykey:PWR_FLAG #FLAG06
+L openair2-rescue:PWR_FLAG-everykey #FLAG06
 U 1 1 594D6485
 P 2100 2250
 F 0 "#FLAG06" H 2100 2350 60  0001 C CNN
@@ -256,46 +307,62 @@ RXD
 Text GLabel 4050 2800 2    60   Input ~ 0
 TXD
 $Comp
-L everykey:T_NPN_BEC T2
+L openair2-rescue:T_NPN_BEC-everykey T2
 U 1 1 59526109
 P 4600 3150
 F 0 "T2" H 4550 3350 50  0000 C CNN
 F 1 "MMBT2222ALT3G" H 4300 3550 60  0001 C CNN
 F 2 "everykey:SOT23-3" H 4600 3150 60  0001 C CNN
 F 3 "" H 4600 3150 60  0000 C CNN
+F 4 "E" H 4600 3150 50  0001 C CNN "jlc extended"
+F 5 "C416011" H 4600 3150 50  0001 C CNN "jlc#"
+F 6 "ON Semicon" H 4600 3150 50  0001 C CNN "manuf"
+F 7 "MMBT2222ALT3G" H 4600 3150 50  0001 C CNN "manuf#"
 	1    4600 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:T_NPN_BEC T3
+L openair2-rescue:T_NPN_BEC-everykey T3
 U 1 1 595262D1
 P 4600 3650
 F 0 "T3" H 4550 3850 50  0000 C CNN
 F 1 "MMBT2222ALT3G" H 4600 3450 60  0001 C CNN
 F 2 "everykey:SOT23-3" H 4600 3650 60  0001 C CNN
 F 3 "" H 4600 3650 60  0000 C CNN
+F 4 "E" H 4600 3650 50  0001 C CNN "jlc extended"
+F 5 "C416011" H 4600 3650 50  0001 C CNN "jlc#"
+F 6 "ON Semicon" H 4600 3650 50  0001 C CNN "manuf"
+F 7 "MMBT2222ALT3G" H 4600 3650 50  0001 C CNN "manuf#"
 	1    4600 3650
 	1    0    0    1   
 $EndComp
 $Comp
-L everykey:R R13
+L openair2-rescue:R-everykey R13
 U 1 1 595264EE
 P 4350 3150
 F 0 "R13" H 4350 3250 50  0000 C CNN
 F 1 "10K" H 4350 3050 50  0000 C CNN
 F 2 "everykey:0603" H 4350 3150 60  0001 C CNN
 F 3 "" H 4350 3150 60  0000 C CNN
+F 4 "C25804" H 4350 3150 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 4350 3150 50  0001 C CNN "manuf"
+F 6 "0603WAF1002T5E" H 4350 3150 50  0001 C CNN "manuf#"
+F 7 "B" H 4350 3150 50  0001 C CNN "jlc extended"
 	1    4350 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R14
+L openair2-rescue:R-everykey R14
 U 1 1 5952655C
 P 4350 3650
 F 0 "R14" H 4350 3750 50  0000 C CNN
 F 1 "10K" H 4350 3550 50  0000 C CNN
 F 2 "everykey:0603" V 4350 3650 60  0001 C CNN
 F 3 "" H 4350 3650 60  0000 C CNN
+F 4 "C25804" H 4350 3650 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 4350 3650 50  0001 C CNN "manuf"
+F 6 "0603WAF1002T5E" H 4350 3650 50  0001 C CNN "manuf#"
+F 7 "B" H 4350 3650 50  0001 C CNN "jlc extended"
 	1    4350 3650
 	1    0    0    -1  
 $EndComp
@@ -314,7 +381,7 @@ TXD
 Text GLabel 5750 2450 0    60   Input ~ 0
 RXD
 $Comp
-L everykey:PWR_FLAG #FLAG07
+L openair2-rescue:PWR_FLAG-everykey #FLAG07
 U 1 1 59529034
 P 2500 3000
 F 0 "#FLAG07" H 2500 3100 60  0001 C CNN
@@ -325,7 +392,7 @@ F 3 "" H 2500 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:PWR_FLAG #FLAG08
+L openair2-rescue:PWR_FLAG-everykey #FLAG08
 U 1 1 5952A796
 P 1150 3550
 F 0 "#FLAG08" H 1150 3650 60  0001 C CNN
@@ -336,7 +403,7 @@ F 3 "" H 1150 3550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:HOLE H2
+L openair2-rescue:HOLE-everykey H2
 U 1 1 5954E6B8
 P 11000 1100
 F 0 "H2" H 11000 1200 50  0000 C CNN
@@ -347,7 +414,7 @@ F 3 "" H 11000 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:HOLE H1
+L openair2-rescue:HOLE-everykey H1
 U 1 1 5954E73C
 P 11000 750
 F 0 "H1" H 11000 850 50  0000 C CNN
@@ -358,7 +425,7 @@ F 3 "" H 11000 750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #PWR09
+L openair2-rescue:GND-everykey #PWR09
 U 1 1 5954FB3C
 P 4900 4050
 F 0 "#PWR09" H 4925 4100 60  0001 C CNN
@@ -369,40 +436,48 @@ F 3 "" H 4900 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R16
+L openair2-rescue:R-everykey R16
 U 1 1 5954FCD0
 P 4900 3600
 F 0 "R16" V 4800 3750 50  0000 C CNN
 F 1 "10K" V 4900 3750 50  0000 C CNN
 F 2 "everykey:0603" H 4900 3600 60  0001 C CNN
 F 3 "" H 4900 3600 60  0000 C CNN
+F 4 "C25804" H 4900 3600 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 4900 3600 50  0001 C CNN "manuf"
+F 6 "0603WAF1002T5E" H 4900 3600 50  0001 C CNN "manuf#"
+F 7 "B" H 4900 3600 50  0001 C CNN "jlc extended"
 	1    4900 3600
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:BUTTON BTN2
+L openair2-rescue:BUTTON-everykey BTN2
 U 1 1 5954FDF3
 P 4800 3200
 F 0 "BTN2" V 4750 3450 50  0000 C CNN
 F 1 "USER" V 4850 3450 50  0000 C CNN
 F 2 "everykey:CK-PTS830" H 4800 3200 60  0001 C CNN
-F 3 "" H 4800 3200 60  0000 C CNN
+F 3 "Alternative?" H 4800 3200 60  0000 C CNN
+F 4 "C&K" H 4800 3200 50  0001 C CNN "manuf"
+F 5 "PTS830GG140 SMTR LFS" H 4800 3200 50  0001 C CNN "manuf#"
 	1    4800 3200
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:BUTTON BTN1
+L openair2-rescue:BUTTON-everykey BTN1
 U 1 1 5954FE8C
 P 4900 3900
 F 0 "BTN1" V 4850 4100 50  0000 C CNN
 F 1 "RESET" V 4950 4100 50  0000 C CNN
 F 2 "everykey:CK-PTS830" H 4900 3900 60  0001 C CNN
-F 3 "" H 4900 3900 60  0000 C CNN
+F 3 "Alternative?" H 4900 3900 60  0000 C CNN
+F 4 "C&K" H 4900 3900 50  0001 C CNN "manuf"
+F 5 "PTS830GG140 SMTR LFS" H 4900 3900 50  0001 C CNN "manuf#"
 	1    4900 3900
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:3.3V #PWR010
+L openair2-rescue:3.3V-everykey #PWR010
 U 1 1 59550200
 P 4800 2700
 F 0 "#PWR010" H 4825 2650 60  0001 C CNN
@@ -413,31 +488,39 @@ F 3 "" H 4800 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R15
+L openair2-rescue:R-everykey R15
 U 1 1 5954FC4E
 P 4800 2900
 F 0 "R15" V 4750 3050 50  0000 C CNN
 F 1 "10K" V 4850 3050 50  0000 C CNN
 F 2 "everykey:0603" H 4800 2900 60  0001 C CNN
 F 3 "" H 4800 2900 60  0000 C CNN
+F 4 "C25804" H 4800 2900 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 4800 2900 50  0001 C CNN "manuf"
+F 6 "0603WAF1002T5E" H 4800 2900 50  0001 C CNN "manuf#"
+F 7 "B" H 4800 2900 50  0001 C CNN "jlc extended"
 	1    4800 2900
 	0    1    1    0   
 $EndComp
 Text Label 1900 3400 0    60   ~ 0
 FT231_3V3
 $Comp
-L everykey:LED LED1
+L openair2-rescue:LED-everykey LED1
 U 1 1 5956854B
 P 8550 1350
 F 0 "LED1" H 8400 1300 50  0000 C CNN
 F 1 "LED" H 8550 1450 50  0001 C CNN
 F 2 "everykey:0603-POLAR" H 8550 1350 60  0001 C CNN
 F 3 "" H 8550 1350 60  0000 C CNN
+F 4 "B" H 8550 1350 50  0001 C CNN "jlc extended"
+F 5 "C2286" H 8550 1350 50  0001 C CNN "jlc#"
+F 6 "Hubei KENTO Elec" H 8550 1350 50  0001 C CNN "manuf"
+F 7 "KT-0603R" H 8550 1350 50  0001 C CNN "manuf#"
 	1    8550 1350
 	-1   0    0    1   
 $EndComp
 $Comp
-L everykey:GND #PWR011
+L openair2-rescue:GND-everykey #PWR011
 U 1 1 5956894E
 P 8700 1700
 F 0 "#PWR011" H 8725 1750 60  0001 C CNN
@@ -448,29 +531,37 @@ F 3 "" H 8700 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R18
+L openair2-rescue:R-everykey R18
 U 1 1 595689D0
 P 7950 1450
 F 0 "R18" H 7950 1600 50  0000 C CNN
 F 1 "220" H 7950 1514 50  0000 C CNN
 F 2 "everykey:0603" H 7950 1450 60  0001 C CNN
 F 3 "" H 7950 1450 60  0000 C CNN
+F 4 "C1603" H 7950 1450 50  0001 C CNN "jlc#"
+F 5 "Samsung Electro-Mechanics" H 7950 1450 50  0001 C CNN "manuf"
+F 6 "CL10B221KB8NNNC" H 7950 1450 50  0001 C CNN "manuf#"
+F 7 "B" H 7950 1450 50  0001 C CNN "jlc extended"
 	1    7950 1450
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R17
+L openair2-rescue:R-everykey R17
 U 1 1 59568A59
 P 8250 1350
 F 0 "R17" H 8250 1500 50  0000 C CNN
 F 1 "220" H 8250 1414 50  0000 C CNN
 F 2 "everykey:0603" H 8250 1350 60  0001 C CNN
 F 3 "" H 8250 1350 60  0000 C CNN
+F 4 "C1603" H 8250 1350 50  0001 C CNN "jlc#"
+F 5 "Samsung Electro-Mechanics" H 8250 1350 50  0001 C CNN "manuf"
+F 6 "CL10B221KB8NNNC" H 8250 1350 50  0001 C CNN "manuf#"
+F 7 "B" H 8250 1350 50  0001 C CNN "jlc extended"
 	1    8250 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:5V #PWR012
+L openair2-rescue:5V-everykey #PWR012
 U 1 1 596B84AA
 P 2450 1250
 F 0 "#PWR012" H 2475 1200 60  0001 C CNN
@@ -481,18 +572,22 @@ F 3 "" H 2450 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R1
+L openair2-rescue:R-everykey R1
 U 1 1 596BA41A
 P 8550 1100
 F 0 "R1" H 8550 1200 50  0000 C CNN
 F 1 "10K" H 8550 1000 50  0000 C CNN
 F 2 "everykey:0603" H 8550 1100 60  0001 C CNN
 F 3 "" H 8550 1100 60  0000 C CNN
+F 4 "C25804" H 8550 1100 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 8550 1100 50  0001 C CNN "manuf"
+F 6 "0603WAF1002T5E" H 8550 1100 50  0001 C CNN "manuf#"
+F 7 "B" H 8550 1100 50  0001 C CNN "jlc extended"
 	1    8550 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #PWR016
+L openair2-rescue:GND-everykey #PWR016
 U 1 1 5977570B
 P 9500 2750
 F 0 "#PWR016" H 9525 2800 60  0001 C CNN
@@ -503,7 +598,7 @@ F 3 "" H 9500 2750 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L everykey:3.3V #PWR017
+L openair2-rescue:3.3V-everykey #PWR017
 U 1 1 59775797
 P 9650 2400
 F 0 "#PWR017" H 9675 2350 60  0001 C CNN
@@ -518,7 +613,7 @@ SCL
 Text GLabel 9500 3150 3    60   Input ~ 0
 SDA
 $Comp
-L everykey:3.3V #PWR018
+L openair2-rescue:3.3V-everykey #PWR018
 U 1 1 59776EA8
 P 8000 1950
 F 0 "#PWR018" H 8025 1900 60  0001 C CNN
@@ -529,24 +624,32 @@ F 3 "" H 8000 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:R R26
+L openair2-rescue:R-everykey R26
 U 1 1 59776F34
 P 8000 2100
 F 0 "R26" V 7950 2000 50  0000 C CNN
 F 1 "2K2" V 8050 2000 50  0000 C CNN
 F 2 "everykey:0603" H 8000 2100 60  0001 C CNN
 F 3 "" H 8000 2100 60  0000 C CNN
+F 4 "C4190" H 8000 2100 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 8000 2100 50  0001 C CNN "manuf"
+F 6 "0603WAF2201T5E" H 8000 2100 50  0001 C CNN "manuf#"
+F 7 "B" H 8000 2100 50  0001 C CNN "jlc extended"
 	1    8000 2100
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:R R27
+L openair2-rescue:R-everykey R27
 U 1 1 59776FC9
 P 8150 2100
 F 0 "R27" V 8100 2200 50  0000 C CNN
 F 1 "2K2" V 8200 2200 50  0000 C CNN
 F 2 "everykey:0603" H 8150 2100 60  0001 C CNN
 F 3 "" H 8150 2100 60  0000 C CNN
+F 4 "C4190" H 8150 2100 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 8150 2100 50  0001 C CNN "manuf"
+F 6 "0603WAF2201T5E" H 8150 2100 50  0001 C CNN "manuf#"
+F 7 "B" H 8150 2100 50  0001 C CNN "jlc extended"
 	1    8150 2100
 	0    1    1    0   
 $EndComp
@@ -555,7 +658,7 @@ Text Label 3750 3500 0    60   ~ 0
 Text Label 3750 3400 0    60   ~ 0
 ~RTS
 $Comp
-L everykey:5V #PWR019
+L openair2-rescue:5V-everykey #PWR019
 U 1 1 5977BCE8
 P 2200 2950
 F 0 "#PWR019" H 2225 2900 60  0001 C CNN
@@ -566,7 +669,7 @@ F 3 "" H 2200 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:3.3V #PWR020
+L openair2-rescue:3.3V-everykey #PWR020
 U 1 1 59786B4A
 P 4750 5350
 F 0 "#PWR020" H 4775 5300 60  0001 C CNN
@@ -577,7 +680,7 @@ F 3 "" H 4750 5350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #PWR021
+L openair2-rescue:GND-everykey #PWR021
 U 1 1 59786BE2
 P 4850 6300
 F 0 "#PWR021" H 4875 6350 60  0001 C CNN
@@ -592,13 +695,15 @@ SCK
 Text GLabel 5900 5550 2    60   BiDi ~ 0
 RFM_DIO0
 $Comp
-L everykey:RFM95W IC6
+L openair2-rescue:RFM95W-everykey IC6
 U 1 1 599DC582
 P 5350 5750
 F 0 "IC6" H 5350 6250 50  0000 C CNN
 F 1 "RFM95W" H 5350 6150 50  0000 C CNN
 F 2 "everykey:RFM95W-SMD" H 5350 5750 60  0001 C CNN
 F 3 "" H 5350 5750 60  0000 C CNN
+F 4 "HopeRF" H 5350 5750 50  0001 C CNN "manuf"
+F 5 "RFM95W-868S2" H 5350 5750 50  0001 C CNN "manuf#"
 	1    5350 5750
 	1    0    0    -1  
 $EndComp
@@ -610,29 +715,35 @@ NoConn ~ 5750 5850
 NoConn ~ 5750 5950
 NoConn ~ 5750 6050
 $Comp
-L everykey:C C13
+L openair2-rescue:C-everykey C13
 U 1 1 599EF309
 P 4750 6050
 F 0 "C13" H 4550 6100 50  0000 L CNN
 F 1 "0u1" H 4550 5950 50  0000 L CNN
 F 2 "everykey:0603" H 4788 5900 50  0001 C CNN
 F 3 "" H 4750 6050 50  0000 C CNN
+F 4 "B" H 4750 6050 50  0001 C CNN "jlc extended"
+F 5 "C14663" H 4750 6050 50  0001 C CNN "jlc#"
+F 6 "YAGEO" H 4750 6050 50  0001 C CNN "manuf"
+F 7 "CC0603KRX7R9BB104" H 4750 6050 50  0001 C CNN "manuf#"
 	1    4750 6050
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:CONN_2 ANT1
+L openair2-rescue:CONN_2-everykey ANT1
 U 1 1 599F0583
 P 6000 5300
 F 0 "ANT1" H 6000 5450 50  0000 C CNN
 F 1 "CONN_2" H 6000 5100 50  0001 C CNN
 F 2 "everykey:U-FL" H 6000 5300 60  0001 C CNN
-F 3 "" H 6000 5300 60  0000 C CNN
+F 3 "!!" H 6000 5300 60  0000 C CNN
+F 4 "TE" H 6000 5300 50  0001 C CNN "manuf"
+F 5 "1909763-1" H 6000 5300 50  0001 C CNN "manuf#"
 	1    6000 5300
 	-1   0    0    -1  
 $EndComp
 $Comp
-L everykey:Test_Point TP7
+L openair2-rescue:Test_Point-everykey TP7
 U 1 1 599F809A
 P 3950 3600
 F 0 "TP7" V 3950 3450 50  0000 C CNN
@@ -643,7 +754,7 @@ F 3 "" H 3950 3600 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:Test_Point TP5
+L openair2-rescue:Test_Point-everykey TP5
 U 1 1 599F8157
 P 4050 3200
 F 0 "TP5" V 4300 3200 50  0000 C CNN
@@ -654,7 +765,7 @@ F 3 "" H 4050 3200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L everykey:Test_Point TP4
+L openair2-rescue:Test_Point-everykey TP4
 U 1 1 599F8B22
 P 3600 2850
 F 0 "TP4" V 3850 2900 50  0000 C CNN
@@ -665,7 +776,7 @@ F 3 "" H 3600 2850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L everykey:Test_Point TP6
+L openair2-rescue:Test_Point-everykey TP6
 U 1 1 599F8C30
 P 3750 2850
 F 0 "TP6" V 4000 2850 50  0000 C CNN
@@ -676,7 +787,7 @@ F 3 "" H 3750 2850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L everykey:Test_Point TP2
+L openair2-rescue:Test_Point-everykey TP2
 U 1 1 599F8DEE
 P 4300 1400
 F 0 "TP2" H 4500 1450 50  0000 C CNN
@@ -687,7 +798,7 @@ F 3 "" H 4300 1400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:Test_Point TP1
+L openair2-rescue:Test_Point-everykey TP1
 U 1 1 599F8EA6
 P 2350 1400
 F 0 "TP1" H 2550 1350 50  0000 C CNN
@@ -698,7 +809,7 @@ F 3 "" H 2350 1400 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L everykey:Test_Point TP3
+L openair2-rescue:Test_Point-everykey TP3
 U 1 1 599F900A
 P 3000 2250
 F 0 "TP3" V 3000 2400 50  0000 C CNN
@@ -713,13 +824,17 @@ SDA
 Text GLabel 8250 2350 2    60   Input ~ 0
 SCL
 $Comp
-L everykey:ESP-WROOM-32 IC1
+L openair2-rescue:ESP-WROOM-32-everykey IC1
 U 1 1 59469FFC
 P 6550 1950
 F 0 "IC1" H 6550 2850 50  0000 C CNN
 F 1 "ESP-WROOM-32" H 6550 350 50  0000 C CNN
 F 2 "everykey:ESP-WROOM-32" H 6550 1950 60  0001 C CNN
 F 3 "" H 6550 1950 60  0000 C CNN
+F 4 "E" H 6550 1950 50  0001 C CNN "jlc extended"
+F 5 "C701343" H 6550 1950 50  0001 C CNN "jlc#"
+F 6 "Espressif Systems" H 6550 1950 50  0001 C CNN "manuf"
+F 7 "ESP32-WROOM-32E(16MB)" H 6550 1950 50  0001 C CNN "manuf#"
 	1    6550 1950
 	1    0    0    -1  
 $EndComp
@@ -728,7 +843,7 @@ SENS1_IO2
 Text GLabel 7300 2950 2    60   BiDi ~ 0
 SENS2_IO2
 $Comp
-L everykey:PWR_FLAG #FLAG022
+L openair2-rescue:PWR_FLAG-everykey #FLAG022
 U 1 1 59AF569F
 P 4050 1250
 F 0 "#FLAG022" H 4050 1350 60  0001 C CNN
@@ -739,7 +854,7 @@ F 3 "" H 4050 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:Test_Point TP8
+L openair2-rescue:Test_Point-everykey TP8
 U 1 1 59AF5DB5
 P 800 4550
 F 0 "TP8" H 700 4500 50  0000 C CNN
@@ -782,51 +897,63 @@ NoConn ~ 5950 1950
 NoConn ~ 5950 2050
 NoConn ~ 5950 2150
 $Comp
-L everykey:Logo LOGO1
+L openair2-rescue:Logo-everykey LOGO1
 U 1 1 5C0A9CE1
 P 11000 1550
 F 0 "LOGO1" H 11000 1450 50  0000 C CNN
 F 1 "Logo" H 11000 1650 50  0000 C CNN
 F 2 "Logo:Logo" H 11000 1700 60  0001 C CNN
-F 3 "" H 11000 1700 60  0001 C CNN
+F 3 "n/a" H 11000 1700 60  0001 C CNN
 	1    11000 1550
 	1    0    0    1   
 $EndComp
 $Comp
-L everykey:FT231XQ IC2
+L openair2-rescue:FT231XQ-everykey IC2
 U 1 1 594E8B2C
 P 3100 3700
 F 0 "IC2" H 3100 4450 50  0000 C CNN
 F 1 "FT231XQ" H 3100 2900 50  0000 C CNN
 F 2 "everykey:QFN-20" H 2850 4050 60  0001 C CNN
 F 3 "" H 2850 4050 60  0000 C CNN
+F 4 "E" H 3100 3700 50  0001 C CNN "jlc extended"
+F 5 "C132159" H 3100 3700 50  0001 C CNN "jlc#"
+F 6 "Future Designs" H 3100 3700 50  0001 C CNN "manuf"
+F 7 "FT231XQ-R" H 3100 3700 50  0001 C CNN "manuf#"
 	1    3100 3700
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:CONN_8 P3
+L openair2-rescue:CONN_8-everykey P3
 U 1 1 5C1D074F
 P 10400 2850
 F 0 "P3" H 10400 3400 50  0000 C CNN
 F 1 "MOD2" H 10400 3300 50  0000 C CNN
 F 2 "everykey:HEADER-1x08-1.27-ZZ-POL" H 10400 3100 60  0001 C CNN
 F 3 "" H 10400 3100 60  0000 C CNN
+F 4 "C306123" H 10400 2850 50  0001 C CNN "jlc#"
+F 5 "TE Connectivity" H 10400 2850 50  0001 C CNN "manuf"
+F 6 "7-215079-8" H 10400 2850 50  0001 C CNN "manuf#"
+F 7 "E" H 10400 2850 50  0001 C CNN "jlc extended"
 	1    10400 2850
 	-1   0    0    -1  
 $EndComp
 $Comp
-L everykey:CONN_8 P2
+L openair2-rescue:CONN_8-everykey P2
 U 1 1 5C1D0809
 P 8800 2850
 F 0 "P2" H 8800 3400 50  0000 C CNN
 F 1 "MOD1" H 8800 3300 50  0000 C CNN
 F 2 "everykey:HEADER-1x08-1.27-ZZ-POL" H 8800 3100 60  0001 C CNN
 F 3 "" H 8800 3100 60  0000 C CNN
+F 4 "C306123" H 8800 2850 50  0001 C CNN "jlc#"
+F 5 "TE Connectivity" H 8800 2850 50  0001 C CNN "manuf"
+F 6 "7-215079-8" H 8800 2850 50  0001 C CNN "manuf#"
+F 7 "E" H 8800 2850 50  0001 C CNN "jlc extended"
 	1    8800 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:5V #PWR024
+L openair2-rescue:5V-everykey #PWR024
 U 1 1 5C1D328C
 P 9500 2400
 F 0 "#PWR024" H 9525 2350 60  0001 C CNN
@@ -843,18 +970,22 @@ SENS2_IO1
 Text GLabel 8950 3500 0    60   BiDi ~ 0
 SENS1_IO1
 $Comp
-L everykey:CONN_3 P4
+L openair2-rescue:CONN_3-everykey P4
 U 1 1 5C1DA730
 P 8650 5800
 F 0 "P4" H 8650 6000 50  0000 C CNN
 F 1 "FAN" H 8650 5600 50  0000 C CNN
 F 2 "everykey:HEADER-1x03-2.54" H 8650 5800 60  0001 C CNN
-F 3 "" H 8650 5800 60  0000 C CNN
+F 3 "Alt?" H 8650 5800 60  0000 C CNN
+F 4 "E" H 8650 5800 50  0001 C CNN "jlc extended"
+F 5 "C86503" H 8650 5800 50  0001 C CNN "jlc#"
+F 6 "TE Connectivity" H 8650 5800 50  0001 C CNN "manuf"
+F 7 "640456-3" H 8650 5800 50  0001 C CNN "manuf#"
 	1    8650 5800
 	-1   0    0    1   
 $EndComp
 $Comp
-L everykey:GND #PWR027
+L openair2-rescue:GND-everykey #PWR027
 U 1 1 5C1DABD3
 P 8400 6350
 F 0 "#PWR027" H 8425 6400 50  0001 C CNN
@@ -865,7 +996,7 @@ F 3 "" H 8400 6350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:5V #PWR028
+L openair2-rescue:5V-everykey #PWR028
 U 1 1 5C1DAE70
 P 8400 5100
 F 0 "#PWR028" H 8425 5050 60  0001 C CNN
@@ -1224,13 +1355,15 @@ Wire Wire Line
 Wire Wire Line
 	8400 6050 8400 6100
 $Comp
-L everykey:D_Schottky D1
+L openair2-rescue:D_Schottky-everykey D1
 U 1 1 5C1DB88A
 P 8400 5950
 F 0 "D1" H 8450 5850 50  0000 C CNN
 F 1 "D_Schottky" H 8350 6050 50  0001 C CNN
 F 2 "everykey:SOD-123F" V 8330 5950 50  0001 C CNN
-F 3 "" H 8400 5950 50  0000 C CNN
+F 3 "Check Part (C8598)" H 8400 5950 50  0000 C CNN
+F 4 "SMC Diode Solutions" H 8400 5950 50  0001 C CNN "manuf"
+F 5 "DSS14UTR" H 8400 5950 50  0001 C CNN "manuf#"
 	1    8400 5950
 	-1   0    0    1   
 $EndComp
@@ -1249,24 +1382,32 @@ Wire Wire Line
 Text GLabel 7100 5300 0    60   Input ~ 0
 FAN_PWM
 $Comp
-L everykey:R R2
+L openair2-rescue:R-everykey R2
 U 1 1 5C1DE2E4
 P 7200 5500
 F 0 "R2" V 7150 5400 50  0000 C CNN
 F 1 "1K" V 7250 5400 50  0000 C CNN
 F 2 "everykey:0603" H 7200 5500 60  0001 C CNN
 F 3 "" H 7200 5500 60  0000 C CNN
+F 4 "C21190" H 7200 5500 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 7200 5500 50  0001 C CNN "manuf"
+F 6 "0603WAF1001T5E" H 7200 5500 50  0001 C CNN "manuf#"
+F 7 "B" H 7200 5500 50  0001 C CNN "jlc extended"
 	1    7200 5500
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:R R3
+L openair2-rescue:R-everykey R3
 U 1 1 5C1DE433
 P 7350 5950
 F 0 "R3" V 7300 6050 50  0000 C CNN
 F 1 "10K" V 7400 6050 50  0000 C CNN
 F 2 "everykey:0603" H 7350 5950 60  0001 C CNN
 F 3 "" H 7350 5950 60  0000 C CNN
+F 4 "C25804" H 7350 5950 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 7350 5950 50  0001 C CNN "manuf"
+F 6 "0603WAF1002T5E" H 7350 5950 50  0001 C CNN "manuf#"
+F 7 "B" H 7350 5950 50  0001 C CNN "jlc extended"
 	1    7350 5950
 	0    1    1    0   
 $EndComp
@@ -1303,7 +1444,7 @@ NoConn ~ 5750 5750
 Text GLabel 7300 2650 2    60   Input ~ 0
 FAN_SENS
 $Comp
-L everykey:Test_Point TP9
+L openair2-rescue:Test_Point-everykey TP9
 U 1 1 5C1FCAF8
 P 5800 5050
 F 0 "TP9" V 5900 4900 50  0000 C CNN
@@ -1316,13 +1457,15 @@ $EndComp
 Wire Wire Line
 	5800 5150 5800 5250
 $Comp
-L everykey:MIC20XX U1
+L openair2-rescue:MIC20XX-everykey U1
 U 1 1 5C2F6C45
 P 7850 5400
 F 0 "U1" H 7850 5600 50  0000 C CNN
 F 1 "MIC2004-1.2YM5" H 7850 5200 50  0000 C CNN
 F 2 "everykey:SOT23-5" H 7850 5400 60  0001 C CNN
-F 3 "" H 7850 5400 60  0001 C CNN
+F 3 "Redesign 1-5 VIN VOUT" H 7850 5400 60  0001 C CNN
+F 4 "Microchip Technology" H 7850 5400 50  0001 C CNN "manuf"
+F 5 "MIC2004-1.2YM5-TR" H 7850 5400 50  0001 C CNN "manuf#"
 	1    7850 5400
 	1    0    0    -1  
 $EndComp
@@ -1330,18 +1473,20 @@ Wire Wire Line
 	7500 5500 7500 6300
 Connection ~ 7500 6300
 $Comp
-L everykey:CONN_4 P5
+L openair2-rescue:CONN_4-everykey P5
 U 1 1 5C2F99E9
 P 1000 1750
 F 0 "P5" H 1000 2000 50  0000 C CNN
 F 1 "PWR" H 1000 1500 50  0000 C CNN
 F 2 "everykey:HEADER-1x04-2.5-JST-XH" H 1000 1800 60  0001 C CNN
 F 3 "" H 1000 1800 60  0000 C CNN
+F 4 "JST" H 1000 1750 50  0001 C CNN "manuf"
+F 5 "B4B-XH-A(LF)(SN)" H 1000 1750 50  0001 C CNN "manuf#"
 	1    1000 1750
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #PWR029
+L openair2-rescue:GND-everykey #PWR029
 U 1 1 5C2F9CDB
 P 1300 2100
 F 0 "#PWR029" H 1325 2150 50  0001 C CNN
@@ -1359,7 +1504,7 @@ Wire Wire Line
 	1300 1700 1150 1700
 Connection ~ 1300 1800
 $Comp
-L everykey:5V #PWR030
+L openair2-rescue:5V-everykey #PWR030
 U 1 1 5C2FA390
 P 1300 1500
 F 0 "#PWR030" H 1325 1450 60  0001 C CNN
@@ -1396,13 +1541,15 @@ Wire Wire Line
 NoConn ~ 10200 5750
 NoConn ~ 10200 5550
 $Comp
-L everykey:CONN_7 P1
+L openair2-rescue:CONN_7-everykey P1
 U 1 1 5C097237
 P 10350 5750
 F 0 "P1" H 10350 6150 50  0000 C CNN
 F 1 "PM" H 10350 5350 50  0000 C CNN
 F 2 "everykey:HEADER-1x07-2.5-JST-XH" H 10350 5950 60  0001 C CNN
-F 3 "" H 10350 5950 60  0000 C CNN
+F 3 "Alt?" H 10350 5950 60  0000 C CNN
+F 4 "JST" H 10350 5750 50  0001 C CNN "manuf"
+F 5 "B7B-XH-A(LF)(SN)" H 10350 5750 50  0001 C CNN "manuf#"
 	1    10350 5750
 	-1   0    0    -1  
 $EndComp
@@ -1411,7 +1558,7 @@ U2TXD
 Text GLabel 9950 6050 0    60   Output ~ 0
 U2RXD
 $Comp
-L everykey:GND #PWR031
+L openair2-rescue:GND-everykey #PWR031
 U 1 1 59774BBA
 P 10050 6200
 F 0 "#PWR031" H 10075 6250 60  0001 C CNN
@@ -1422,7 +1569,7 @@ F 3 "" H 10050 6200 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L everykey:5V #PWR032
+L openair2-rescue:5V-everykey #PWR032
 U 1 1 59774958
 P 9850 5350
 F 0 "#PWR032" H 9875 5300 60  0001 C CNN
@@ -1433,7 +1580,7 @@ F 3 "" H 9850 5350 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L everykey:3.3V #PWR033
+L openair2-rescue:3.3V-everykey #PWR033
 U 1 1 597748CE
 P 10050 5350
 F 0 "#PWR033" H 10075 5300 60  0001 C CNN
@@ -1465,13 +1612,17 @@ Wire Wire Line
 Wire Wire Line
 	8200 5500 8400 5500
 $Comp
-L everykey:C C14
+L openair2-rescue:C-everykey C14
 U 1 1 5C3038BD
 P 8250 5950
 F 0 "C14" H 8050 6000 50  0000 L CNN
 F 1 "10u" H 8050 5900 50  0000 L CNN
 F 2 "everykey:0805" H 8288 5800 50  0001 C CNN
 F 3 "" H 8250 5950 50  0000 C CNN
+F 4 "B" H 8250 5950 50  0001 C CNN "jlc extended"
+F 5 "C15850" H 8250 5950 50  0001 C CNN "jlc#"
+F 6 "Samsung Electro-Mechanics" H 8250 5950 50  0001 C CNN "manuf"
+F 7 "CL21A106KAYNNNE" H 8250 5950 50  0001 C CNN "manuf#"
 	1    8250 5950
 	1    0    0    -1  
 $EndComp
@@ -1482,7 +1633,7 @@ Wire Wire Line
 	8250 6050 8250 6300
 Connection ~ 8250 6300
 $Comp
-L everykey:Test_Point TP11
+L openair2-rescue:Test_Point-everykey TP11
 U 1 1 5C4AA570
 P 7200 1050
 F 0 "TP11" H 7200 950 50  0000 C CNN
@@ -1493,7 +1644,7 @@ F 3 "" H 7200 1050 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L everykey:Test_Point TP10
+L openair2-rescue:Test_Point-everykey TP10
 U 1 1 5C4AA77D
 P 5650 1250
 F 0 "TP10" H 5650 1150 50  0000 C CNN
@@ -1510,24 +1661,32 @@ Wire Wire Line
 	5650 1350 5650 1450
 Connection ~ 5650 1450
 $Comp
-L everykey:R R4
+L openair2-rescue:R-everykey R4
 U 1 1 5D014545
 P 7200 5850
 F 0 "R4" V 7150 5750 50  0000 C CNN
 F 1 "10K" V 7250 5750 50  0000 C CNN
 F 2 "everykey:0603" H 7200 5850 60  0001 C CNN
 F 3 "" H 7200 5850 60  0000 C CNN
+F 4 "C25804" H 7200 5850 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 7200 5850 50  0001 C CNN "manuf"
+F 6 "0603WAF1002T5E" H 7200 5850 50  0001 C CNN "manuf#"
+F 7 "B" H 7200 5850 50  0001 C CNN "jlc extended"
 	1    7200 5850
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:R R5
+L openair2-rescue:R-everykey R5
 U 1 1 5D0146B4
 P 7200 6150
 F 0 "R5" V 7150 6050 50  0000 C CNN
 F 1 "22K" V 7250 6050 50  0000 C CNN
 F 2 "everykey:0603" H 7200 6150 60  0001 C CNN
 F 3 "" H 7200 6150 60  0000 C CNN
+F 4 "C31850" H 7200 6150 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 7200 6150 50  0001 C CNN "manuf"
+F 6 "0603WAF2202T5E" H 7200 6150 50  0001 C CNN "manuf#"
+F 7 "B" H 7200 6150 50  0001 C CNN "jlc extended"
 	1    7200 6150
 	0    1    1    0   
 $EndComp
@@ -1723,18 +1882,22 @@ SDA
 Text GLabel 3900 5500 2    60   Input ~ 0
 SCL
 $Comp
-L everykey:C C5
+L openair2-rescue:C-everykey C5
 U 1 1 5976A1D1
 P 2750 5600
 F 0 "C5" H 2550 5650 50  0000 L CNN
 F 1 "0u1" H 2550 5550 50  0000 L CNN
 F 2 "everykey:0603" H 2788 5450 50  0001 C CNN
 F 3 "" H 2750 5600 50  0000 C CNN
+F 4 "B" H 2750 5600 50  0001 C CNN "jlc extended"
+F 5 "C14663" H 2750 5600 50  0001 C CNN "jlc#"
+F 6 "YAGEO" H 2750 5600 50  0001 C CNN "manuf"
+F 7 "CC0603KRX7R9BB104" H 2750 5600 50  0001 C CNN "manuf#"
 	1    2750 5600
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:3.3V #PWR015
+L openair2-rescue:3.3V-everykey #PWR015
 U 1 1 59769FBC
 P 2750 5300
 F 0 "#PWR015" H 2775 5250 60  0001 C CNN
@@ -1745,7 +1908,7 @@ F 3 "" H 2750 5300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #PWR014
+L openair2-rescue:GND-everykey #PWR014
 U 1 1 59769F36
 P 2750 6000
 F 0 "#PWR014" H 2775 6050 60  0001 C CNN
@@ -1756,13 +1919,17 @@ F 3 "" H 2750 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L everykey:SI7006-A20 IC5
+L openair2-rescue:SI7006-A20-everykey IC5
 U 1 1 59769EA6
 P 3350 5600
 F 0 "IC5" H 3350 5950 50  0000 C CNN
 F 1 "SI7006-A20" H 3350 5850 50  0000 C CNN
 F 2 "everykey:SI7006-A20" H 3350 5600 60  0001 C CNN
-F 3 "" H 3350 5600 60  0000 C CNN
+F 3 "HopeRF?!" H 3350 5600 60  0000 C CNN
+F 4 "E" H 3350 5600 50  0001 C CNN "jlc extended"
+F 5 "C155480" H 3350 5600 50  0001 C CNN "jlc#"
+F 6 "Silicon Labs" H 3350 5600 50  0001 C CNN "manuf"
+F 7 "SI7006-A20-IM1R" H 3350 5600 50  0001 C CNN "manuf#"
 	1    3350 5600
 	1    0    0    -1  
 $EndComp
@@ -1800,37 +1967,49 @@ SENS2_IO2
 Text GLabel 10150 3700 2    60   Output ~ 0
 SENS2_IN
 $Comp
-L everykey:R R10
+L openair2-rescue:R-everykey R10
 U 1 1 6034AE48
 P 9950 3850
 F 0 "R10" V 9900 3800 50  0000 R CNN
 F 1 "47K" V 10000 3800 50  0000 R CNN
 F 2 "everykey:0603" H 9950 3850 60  0001 C CNN
 F 3 "" H 9950 3850 60  0000 C CNN
+F 4 "C25819" H 9950 3850 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 9950 3850 50  0001 C CNN "manuf"
+F 6 "0603WAF4702T5E" H 9950 3850 50  0001 C CNN "manuf#"
+F 7 "B" H 9950 3850 50  0001 C CNN "jlc extended"
 	1    9950 3850
 	0    1    1    0   
 $EndComp
 $Comp
-L everykey:R R6
+L openair2-rescue:R-everykey R6
 U 1 1 603806FD
 P 9050 3350
 F 0 "R6" V 9000 3200 50  0000 L CNN
 F 1 "27" V 9100 3200 50  0000 L CNN
 F 2 "everykey:0603" H 9050 3350 60  0001 C CNN
 F 3 "" H 9050 3350 60  0000 C CNN
+F 4 "C22966" H 9050 3350 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 9050 3350 50  0001 C CNN "manuf"
+F 6 "0603WAF2700T5E" H 9050 3350 50  0001 C CNN "manuf#"
+F 7 "B" H 9050 3350 50  0001 C CNN "jlc extended"
 	1    9050 3350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9050 3450 9050 3500
 $Comp
-L everykey:R R9
+L openair2-rescue:R-everykey R9
 U 1 1 603827FD
 P 9850 3350
 F 0 "R9" V 9800 3200 50  0000 L CNN
 F 1 "27" V 9900 3200 50  0000 L CNN
 F 2 "everykey:0603" H 9850 3350 60  0001 C CNN
 F 3 "" H 9850 3350 60  0000 C CNN
+F 4 "C22966" H 9850 3350 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 9850 3350 50  0001 C CNN "manuf"
+F 6 "0603WAF2700T5E" H 9850 3350 50  0001 C CNN "manuf#"
+F 7 "B" H 9850 3350 50  0001 C CNN "jlc extended"
 	1    9850 3350
 	0    1    1    0   
 $EndComp
@@ -1841,13 +2020,17 @@ Wire Wire Line
 Wire Wire Line
 	9250 2800 9250 3250
 $Comp
-L everykey:R R8
+L openair2-rescue:R-everykey R8
 U 1 1 603817C7
 P 9250 3350
 F 0 "R8" V 9204 3407 50  0000 L CNN
 F 1 "27" V 9295 3407 50  0000 L CNN
 F 2 "everykey:0603" H 9250 3350 60  0001 C CNN
 F 3 "" H 9250 3350 60  0000 C CNN
+F 4 "C22966" H 9250 3350 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 9250 3350 50  0001 C CNN "manuf"
+F 6 "0603WAF2700T5E" H 9250 3350 50  0001 C CNN "manuf#"
+F 7 "B" H 9250 3350 50  0001 C CNN "jlc extended"
 	1    9250 3350
 	0    1    1    0   
 $EndComp
@@ -1856,20 +2039,24 @@ Wire Wire Line
 Wire Wire Line
 	9250 3600 8950 3600
 $Comp
-L everykey:R R19
+L openair2-rescue:R-everykey R19
 U 1 1 60381FDA
 P 10050 3350
 F 0 "R19" V 10004 3407 50  0000 L CNN
 F 1 "27" V 10095 3407 50  0000 L CNN
 F 2 "everykey:0603" H 10050 3350 60  0001 C CNN
 F 3 "" H 10050 3350 60  0000 C CNN
+F 4 "C22966" H 10050 3350 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 10050 3350 50  0001 C CNN "manuf"
+F 6 "0603WAF2700T5E" H 10050 3350 50  0001 C CNN "manuf#"
+F 7 "B" H 10050 3350 50  0001 C CNN "jlc extended"
 	1    10050 3350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	10050 3450 10050 3500
 $Comp
-L everykey:GND #PWR0101
+L openair2-rescue:GND-everykey #PWR0101
 U 1 1 609CCD90
 P 9150 4000
 F 0 "#PWR0101" H 9175 4050 60  0001 C CNN
@@ -1880,7 +2067,7 @@ F 3 "" H 9150 4000 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L everykey:GND #PWR0102
+L openair2-rescue:GND-everykey #PWR0102
 U 1 1 609CDDDE
 P 9950 4000
 F 0 "#PWR0102" H 9975 4050 60  0001 C CNN
@@ -1907,20 +2094,22 @@ Wire Wire Line
 Wire Wire Line
 	9950 3000 9950 3700
 $Comp
-L everykey:PAM2305 IC3
+L openair2-rescue:PAM2305-everykey IC3
 U 1 1 60BD1893
 P 3250 1600
 F 0 "IC3" H 3250 1925 50  0000 C CNN
 F 1 "SC189Z" H 3250 1834 50  0000 C CNN
 F 2 "everykey:SOT23-5" H 3250 1600 60  0001 C CNN
-F 3 "" H 3250 1600 60  0000 C CNN
+F 3 "Buck, Alternatives?" H 3250 1600 60  0000 C CNN
+F 4 "Semtech Corporation" H 3250 1600 50  0001 C CNN "manuf"
+F 5 "SC189ZSKTRT" H 3250 1600 50  0001 C CNN "manuf#"
 	1    3250 1600
 	1    0    0    -1  
 $EndComp
 Text Notes 800  7400 0    60   ~ 0
 Buck options: \nLM3671 / 2.2uH / 4.7uF / 10uF / 600mA\nSC189Z / 2.2uH / 4.7uF / 10uF / 1.5A\nADP2108 / 2.2uH / 4.7uF / 10uF / 600mA\nMCP1603 / 4.7uH / 4.7uF / 4.7uF / 500mA
 $Comp
-L everykey:3.3V #PWR0103
+L openair2-rescue:3.3V-everykey #PWR0103
 U 1 1 60C1D802
 P 9550 3600
 F 0 "#PWR0103" H 9575 3550 60  0001 C CNN
@@ -1931,7 +2120,7 @@ F 3 "" H 9550 3600 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L everykey:R R20
+L openair2-rescue:R-everykey R20
 U 1 1 60C1DC1D
 P 9350 3700
 F 0 "R20" H 9300 3650 50  0000 L CNN
@@ -1942,7 +2131,7 @@ F 3 "" H 9350 3700 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L everykey:R R21
+L openair2-rescue:R-everykey R21
 U 1 1 60C1E182
 P 9750 3700
 F 0 "R21" H 9800 3650 50  0000 R CNN
@@ -1964,13 +2153,17 @@ Connection ~ 9550 3700
 Wire Wire Line
 	9950 3700 9850 3700
 $Comp
-L everykey:R R7
+L openair2-rescue:R-everykey R7
 U 1 1 60349DC6
 P 9150 3850
 F 0 "R7" V 9100 3900 50  0000 L CNN
 F 1 "47K" V 9200 3900 50  0000 L CNN
 F 2 "everykey:0603" H 9150 3850 60  0001 C CNN
 F 3 "" H 9150 3850 60  0000 C CNN
+F 4 "C25819" H 9150 3850 50  0001 C CNN "jlc#"
+F 5 "Uniroyal Elec" H 9150 3850 50  0001 C CNN "manuf"
+F 6 "0603WAF4702T5E" H 9150 3850 50  0001 C CNN "manuf#"
+F 7 "B" H 9150 3850 50  0001 C CNN "jlc extended"
 	1    9150 3850
 	0    1    1    0   
 $EndComp
