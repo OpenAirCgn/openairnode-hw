@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "OpenAir"
+Date "2021-03-26"
+Rev "v1.4"
+Comp "Press Every Key UG"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -742,85 +742,6 @@ F 3 "" H 2200 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L openair2-rescue:3.3V-everykey #PWR020
-U 1 1 59786B4A
-P 4750 5350
-F 0 "#PWR020" H 4775 5300 60  0001 C CNN
-F 1 "3.3V" H 4750 5500 50  0000 C CNN
-F 2 "" H 4750 5350 60  0000 C CNN
-F 3 "" H 4750 5350 60  0000 C CNN
-	1    4750 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L openair2-rescue:GND-everykey #PWR021
-U 1 1 59786BE2
-P 4850 6300
-F 0 "#PWR021" H 4875 6350 60  0001 C CNN
-F 1 "GND" H 4850 6150 50  0000 C CNN
-F 2 "" H 4850 6300 60  0000 C CNN
-F 3 "" H 4850 6300 60  0000 C CNN
-	1    4850 6300
-	1    0    0    -1  
-$EndComp
-Text GLabel 4650 5750 0    60   Input ~ 0
-SCK
-Text GLabel 5900 5550 2    60   BiDi ~ 0
-RFM_DIO0
-$Comp
-L openair2-rescue:RFM95W-everykey IC6
-U 1 1 599DC582
-P 5350 5750
-F 0 "IC6" H 5350 6250 50  0000 C CNN
-F 1 "RFM95W" H 5350 6150 50  0000 C CNN
-F 2 "everykey:RFM95W-SMD" H 5350 5750 60  0001 C CNN
-F 3 "DNP" H 5350 5750 60  0001 C CNN
-F 4 "HopeRF" H 5350 5750 50  0001 C CNN "manuf"
-F 5 "RFM95W-868S2" H 5350 5750 50  0001 C CNN "manuf#"
-F 6 "DNP" H 5350 5750 50  0001 C CNN "digi#"
-	1    5350 5750
-	1    0    0    -1  
-$EndComp
-Text GLabel 5900 6150 2    60   Input ~ 0
-RFM_RST
-Text GLabel 5900 5650 2    60   BiDi ~ 0
-RFM_DIO1
-NoConn ~ 5750 5850
-NoConn ~ 5750 5950
-NoConn ~ 5750 6050
-$Comp
-L openair2-rescue:C-everykey C13
-U 1 1 599EF309
-P 4750 6050
-F 0 "C13" H 4550 6100 50  0000 L CNN
-F 1 "0u1" H 4550 5950 50  0000 L CNN
-F 2 "everykey:0603" H 4788 5900 50  0001 C CNN
-F 3 "" H 4750 6050 50  0000 C CNN
-F 4 "B" H 4750 6050 50  0001 C CNN "jlc extended"
-F 5 "C14663" H 4750 6050 50  0001 C CNN "jlc#"
-F 6 "YAGEO" H 4750 6050 50  0001 C CNN "manuf"
-F 7 "CC0603KRX7R9BB104" H 4750 6050 50  0001 C CNN "manuf#"
-F 8 "311-1344-1-ND" H 4750 6050 50  0001 C CNN "digi#"
-F 9 "603-CC603KRX7R9BB104" H 4750 6050 50  0001 C CNN "mouser#"
-	1    4750 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L openair2-rescue:CONN_2-everykey ANT1
-U 1 1 599F0583
-P 6000 5300
-F 0 "ANT1" H 6000 5450 50  0000 C CNN
-F 1 "CONN_2" H 6000 5100 50  0001 C CNN
-F 2 "everykey:U-FL" H 6000 5300 60  0001 C CNN
-F 3 "DNP" H 6000 5300 60  0000 C CNN
-F 4 "TE" H 6000 5300 50  0001 C CNN "manuf"
-F 5 "1909763-1" H 6000 5300 50  0001 C CNN "manuf#"
-F 6 "A118077CT-ND" H 6000 5300 50  0001 C CNN "digi#"
-F 7 "571-1909763-1" H 6000 5300 50  0001 C CNN "mouser#"
-	1    6000 5300
-	-1   0    0    -1  
-$EndComp
-$Comp
 L openair2-rescue:Test_Point-everykey TP7
 U 1 1 599F809A
 P 3950 3600
@@ -958,10 +879,6 @@ Text GLabel 7300 1950 2    60   Input ~ 0
 MISO
 Text GLabel 7300 2850 2    60   Output ~ 0
 MOSI
-Text GLabel 4650 5550 0    60   Output ~ 0
-MISO
-Text GLabel 4650 5650 0    60   Input ~ 0
-MOSI
 Text GLabel 7300 2050 2    60   Output ~ 0
 U2TXD
 Text GLabel 7300 2150 2    60   Input ~ 0
@@ -1058,40 +975,40 @@ SENS1_IO1
 $Comp
 L openair2-rescue:CONN_3-everykey P4
 U 1 1 5C1DA730
-P 8650 5800
-F 0 "P4" H 8650 6000 50  0000 C CNN
-F 1 "FAN" H 8650 5600 50  0000 C CNN
-F 2 "everykey:HEADER-1x03-2.54" H 8650 5800 60  0001 C CNN
-F 3 "" H 8650 5800 60  0000 C CNN
-F 4 "E" H 8650 5800 50  0001 C CNN "jlc extended"
-F 5 "C86503" H 8650 5800 50  0001 C CNN "jlc#"
-F 6 "TE Connectivity" H 8650 5800 50  0001 C CNN "manuf"
-F 7 "640456-3" H 8650 5800 50  0001 C CNN "manuf#"
-F 8 "A19470-ND" H 8650 5800 50  0001 C CNN "digi#"
-F 9 "571-6404563" H 8650 5800 50  0001 C CNN "mouser#"
-	1    8650 5800
+P 7000 5900
+F 0 "P4" H 7000 6100 50  0000 C CNN
+F 1 "FAN" H 7000 5700 50  0000 C CNN
+F 2 "everykey:HEADER-1x03-2.54" H 7000 5900 60  0001 C CNN
+F 3 "" H 7000 5900 60  0000 C CNN
+F 4 "E" H 7000 5900 50  0001 C CNN "jlc extended"
+F 5 "C86503" H 7000 5900 50  0001 C CNN "jlc#"
+F 6 "TE Connectivity" H 7000 5900 50  0001 C CNN "manuf"
+F 7 "640456-3" H 7000 5900 50  0001 C CNN "manuf#"
+F 8 "A19470-ND" H 7000 5900 50  0001 C CNN "digi#"
+F 9 "571-6404563" H 7000 5900 50  0001 C CNN "mouser#"
+	1    7000 5900
 	-1   0    0    1   
 $EndComp
 $Comp
 L openair2-rescue:GND-everykey #PWR027
 U 1 1 5C1DABD3
-P 8400 6350
-F 0 "#PWR027" H 8425 6400 50  0001 C CNN
-F 1 "GND" H 8400 6200 50  0000 C CNN
-F 2 "" H 8400 6350 60  0000 C CNN
-F 3 "" H 8400 6350 60  0000 C CNN
-	1    8400 6350
+P 6750 6450
+F 0 "#PWR027" H 6775 6500 50  0001 C CNN
+F 1 "GND" H 6750 6300 50  0000 C CNN
+F 2 "" H 6750 6450 60  0000 C CNN
+F 3 "" H 6750 6450 60  0000 C CNN
+	1    6750 6450
 	1    0    0    -1  
 $EndComp
 $Comp
 L openair2-rescue:5V-everykey #PWR028
 U 1 1 5C1DAE70
-P 8400 5100
-F 0 "#PWR028" H 8425 5050 60  0001 C CNN
-F 1 "5V" H 8400 5250 50  0000 C CNN
-F 2 "" H 8400 5100 60  0000 C CNN
-F 3 "" H 8400 5100 60  0000 C CNN
-	1    8400 5100
+P 6750 5200
+F 0 "#PWR028" H 6775 5150 60  0001 C CNN
+F 1 "5V" H 6750 5350 50  0000 C CNN
+F 2 "" H 6750 5200 60  0000 C CNN
+F 3 "" H 6750 5200 60  0000 C CNN
+	1    6750 5200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1317,40 +1234,6 @@ Wire Wire Line
 	8150 2200 8150 2350
 Connection ~ 8150 2350
 Wire Wire Line
-	4850 5950 4850 6050
-Wire Wire Line
-	4850 5950 4950 5950
-Wire Wire Line
-	4950 6050 4850 6050
-Connection ~ 4850 6050
-Wire Wire Line
-	4750 5450 4950 5450
-Wire Wire Line
-	4950 5550 4650 5550
-Wire Wire Line
-	4950 5650 4650 5650
-Wire Wire Line
-	4950 5750 4650 5750
-Wire Wire Line
-	4950 5850 4650 5850
-Wire Wire Line
-	5750 5550 5900 5550
-Wire Wire Line
-	4750 6150 4850 6150
-Connection ~ 4850 6150
-Wire Wire Line
-	5750 6150 5900 6150
-Wire Wire Line
-	5750 5650 5900 5650
-Wire Wire Line
-	4750 5350 4750 5450
-Connection ~ 4750 5450
-Wire Wire Line
-	4850 6250 5850 6250
-Wire Wire Line
-	5850 6250 5850 5350
-Connection ~ 4850 6250
-Wire Wire Line
 	4050 1400 4200 1400
 Connection ~ 4200 1400
 Wire Wire Line
@@ -1437,91 +1320,91 @@ Wire Wire Line
 Wire Wire Line
 	9050 3500 8950 3500
 Wire Wire Line
-	8400 5800 8500 5800
+	6750 5900 6850 5900
 Wire Wire Line
-	8400 5500 8400 5800
+	6750 5600 6750 5900
 Wire Wire Line
-	8400 6050 8400 6100
+	6750 6150 6750 6200
 $Comp
 L openair2-rescue:D_Schottky-everykey D1
 U 1 1 5C1DB88A
-P 8400 5950
-F 0 "D1" H 8450 5850 50  0000 C CNN
-F 1 "D_Schottky" H 8350 6050 50  0001 C CNN
-F 2 "everykey:SOD-123F" V 8330 5950 50  0001 C CNN
-F 3 "" H 8400 5950 50  0000 C CNN
-F 4 "Micro Commercial" H 8400 5950 50  0001 C CNN "manuf"
-F 5 "B5819W" H 8400 5950 50  0001 C CNN "manuf#"
-F 6 "B" H 8400 5950 50  0001 C CNN "jlc extended"
-F 7 "C8598" H 8400 5950 50  0001 C CNN "jlc#"
-F 8 "B5819W-TPMSCT-ND" H 8400 5950 50  0001 C CNN "digi#"
-F 9 "833-B5819W-TP" H 8400 5950 50  0001 C CNN "mouser#"
-	1    8400 5950
+P 6750 6050
+F 0 "D1" H 6800 5950 50  0000 C CNN
+F 1 "D_Schottky" H 6700 6150 50  0001 C CNN
+F 2 "everykey:SOD-123F" V 6680 6050 50  0001 C CNN
+F 3 "" H 6750 6050 50  0000 C CNN
+F 4 "Micro Commercial" H 6750 6050 50  0001 C CNN "manuf"
+F 5 "B5819W" H 6750 6050 50  0001 C CNN "manuf#"
+F 6 "B" H 6750 6050 50  0001 C CNN "jlc extended"
+F 7 "C8598" H 6750 6050 50  0001 C CNN "jlc#"
+F 8 "B5819W-TPMSCT-ND" H 6750 6050 50  0001 C CNN "digi#"
+F 9 "833-B5819W-TP" H 6750 6050 50  0001 C CNN "mouser#"
+	1    6750 6050
 	-1   0    0    1   
 $EndComp
-Connection ~ 8400 5800
+Connection ~ 6750 5900
 Wire Wire Line
-	8400 6100 8500 6100
-Connection ~ 8400 6100
+	6750 6200 6850 6200
+Connection ~ 6750 6200
 Wire Wire Line
-	8500 6100 8500 5900
+	6850 6200 6850 6000
 Wire Wire Line
-	7200 5700 8500 5700
+	5550 5800 6850 5800
 Text Notes 9200 2150 0    60   ~ 0
 SENSOR MODULES
 Wire Wire Line
-	7100 5300 7350 5300
-Text GLabel 7100 5300 0    60   Input ~ 0
+	5450 5400 5700 5400
+Text GLabel 5450 5400 0    60   Input ~ 0
 FAN_PWM
 $Comp
 L openair2-rescue:R-everykey R2
 U 1 1 5C1DE2E4
-P 7200 5500
-F 0 "R2" V 7150 5400 50  0000 C CNN
-F 1 "1K" V 7250 5400 50  0000 C CNN
-F 2 "everykey:0603" H 7200 5500 60  0001 C CNN
-F 3 "" H 7200 5500 60  0000 C CNN
-F 4 "C21190" H 7200 5500 50  0001 C CNN "jlc#"
-F 5 "Stackpole Electronics Inc" H 7200 5500 50  0001 C CNN "manuf"
-F 6 "RMCF0603FT1K00" H 7200 5500 50  0001 C CNN "manuf#"
-F 7 "B" H 7200 5500 50  0001 C CNN "jlc extended"
-F 8 "RMCF0603FT1K00CT-ND" H 7200 5500 50  0001 C CNN "digi#"
-F 9 "603-RC0603FR-071KL" H 7200 5500 50  0001 C CNN "mouser#"
-F 10 "Generic" H 7200 5500 50  0001 C CNN "comment"
-	1    7200 5500
+P 5550 5600
+F 0 "R2" V 5500 5500 50  0000 C CNN
+F 1 "1K" V 5600 5500 50  0000 C CNN
+F 2 "everykey:0603" H 5550 5600 60  0001 C CNN
+F 3 "" H 5550 5600 60  0000 C CNN
+F 4 "C21190" H 5550 5600 50  0001 C CNN "jlc#"
+F 5 "Stackpole Electronics Inc" H 5550 5600 50  0001 C CNN "manuf"
+F 6 "RMCF0603FT1K00" H 5550 5600 50  0001 C CNN "manuf#"
+F 7 "B" H 5550 5600 50  0001 C CNN "jlc extended"
+F 8 "RMCF0603FT1K00CT-ND" H 5550 5600 50  0001 C CNN "digi#"
+F 9 "603-RC0603FR-071KL" H 5550 5600 50  0001 C CNN "mouser#"
+F 10 "Generic" H 5550 5600 50  0001 C CNN "comment"
+	1    5550 5600
 	0    1    1    0   
 $EndComp
 $Comp
 L openair2-rescue:R-everykey R3
 U 1 1 5C1DE433
-P 7350 5950
-F 0 "R3" V 7300 6050 50  0000 C CNN
-F 1 "DNP" V 7400 6050 50  0000 C CNN
-F 2 "everykey:0603" H 7350 5950 60  0001 C CNN
-F 3 "" H 7350 5950 60  0000 C CNN
-F 4 "" H 7350 5950 50  0001 C CNN "jlc#"
-F 5 "" H 7350 5950 50  0001 C CNN "manuf"
-F 6 "" H 7350 5950 50  0001 C CNN "manuf#"
-F 7 "" H 7350 5950 50  0001 C CNN "jlc extended"
-F 8 "" H 7350 5950 50  0001 C CNN "digi#"
-F 9 "Generic" H 7350 5950 50  0001 C CNN "comment"
-F 10 "" H 7350 5950 50  0001 C CNN "mouser#"
-	1    7350 5950
+P 5700 6050
+F 0 "R3" V 5650 6150 50  0000 C CNN
+F 1 "DNP" V 5750 6150 50  0000 C CNN
+F 2 "everykey:0603" H 5700 6050 60  0001 C CNN
+F 3 "" H 5700 6050 60  0000 C CNN
+F 4 "" H 5700 6050 50  0001 C CNN "jlc#"
+F 5 "" H 5700 6050 50  0001 C CNN "manuf"
+F 6 "" H 5700 6050 50  0001 C CNN "manuf#"
+F 7 "" H 5700 6050 50  0001 C CNN "jlc extended"
+F 8 "" H 5700 6050 50  0001 C CNN "digi#"
+F 9 "Generic" H 5700 6050 50  0001 C CNN "comment"
+F 10 "" H 5700 6050 50  0001 C CNN "mouser#"
+	1    5700 6050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7200 5600 7200 5700
-Connection ~ 7200 5700
+	5550 5700 5550 5800
+Connection ~ 5550 5800
 Wire Wire Line
-	7200 5400 7200 5150
+	5550 5500 5550 5250
 Wire Wire Line
-	7350 5300 7350 5850
-Connection ~ 7350 5300
+	5700 5400 5700 5950
+Connection ~ 5700 5400
 Wire Wire Line
-	7350 6050 7350 6300
+	5700 6150 5700 6400
 Wire Wire Line
-	7200 6300 7350 6300
-Connection ~ 8400 6300
+	5550 6400 5700 6400
+Connection ~ 6750 6400
 Wire Wire Line
 	7150 1750 7300 1750
 Wire Wire Line
@@ -1532,46 +1415,30 @@ Text GLabel 7300 1650 2    60   BiDi ~ 0
 SENS1_IO1
 Text GLabel 7300 1750 2    60   BiDi ~ 0
 SENS2_IO1
-Text Notes 5250 5100 0    60   ~ 0
-LORA
-Text Notes 7700 5050 0    60   ~ 0
+Text Notes 6050 5150 0    60   ~ 0
 FAN CTRL
 Text Notes 6900 800  0    60   ~ 0
 MCU
-NoConn ~ 5750 5750
 Text GLabel 7300 2650 2    60   Input ~ 0
 FAN_SENS
 $Comp
-L openair2-rescue:Test_Point-everykey TP9
-U 1 1 5C1FCAF8
-P 5800 5050
-F 0 "TP9" V 5900 4900 50  0000 C CNN
-F 1 "ANT" V 5800 4900 50  0000 C CNN
-F 2 "everykey:HEADER-1x01" H 5800 5050 60  0001 C CNN
-F 3 "" H 5800 5050 60  0000 C CNN
-	1    5800 5050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5800 5150 5800 5250
-$Comp
 L openair2-rescue:MIC20XX-everykey U1
 U 1 1 5C2F6C45
-P 7850 5400
-F 0 "U1" H 7850 5600 50  0000 C CNN
-F 1 "MIC2004-1.2YM5" H 7850 5200 50  0000 C CNN
-F 2 "everykey:SOT23-5" H 7850 5400 60  0001 C CNN
-F 3 "Redesign 1-5 VIN VOUT" H 7850 5400 60  0001 C CNN
-F 4 "Microchip Technology" H 7850 5400 50  0001 C CNN "manuf"
-F 5 "MIC2004-1.2YM5-TR" H 7850 5400 50  0001 C CNN "manuf#"
-F 6 "576-2584-1-ND" H 7850 5400 50  0001 C CNN "digi#"
-F 7 "998-MIC2004-1.2YM5TR" H 7850 5400 50  0001 C CNN "mouser#"
-	1    7850 5400
+P 6200 5500
+F 0 "U1" H 6200 5700 50  0000 C CNN
+F 1 "MIC2004-1.2YM5" H 6200 5300 50  0000 C CNN
+F 2 "everykey:SOT23-5" H 6200 5500 60  0001 C CNN
+F 3 "Redesign 1-5 VIN VOUT" H 6200 5500 60  0001 C CNN
+F 4 "Microchip Technology" H 6200 5500 50  0001 C CNN "manuf"
+F 5 "MIC2004-1.2YM5-TR" H 6200 5500 50  0001 C CNN "manuf#"
+F 6 "576-2584-1-ND" H 6200 5500 50  0001 C CNN "digi#"
+F 7 "998-MIC2004-1.2YM5TR" H 6200 5500 50  0001 C CNN "mouser#"
+	1    6200 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 5500 7500 6300
-Connection ~ 7500 6300
+	5850 5600 5850 6400
+Connection ~ 5850 6400
 $Comp
 L openair2-rescue:CONN_4-everykey P5
 U 1 1 5C2F99E9
@@ -1702,42 +1569,37 @@ Wire Wire Line
 	8100 1450 8100 1550
 Wire Wire Line
 	8100 1550 8200 1550
-Wire Wire Line
-	5850 5250 5800 5250
-Connection ~ 5800 5250
-Wire Wire Line
-	5800 5450 5750 5450
 Text Notes 9650 5000 0    60   ~ 0
 PM SENSOR
 Wire Wire Line
-	8400 5300 8250 5300
+	6750 5400 6600 5400
 Wire Wire Line
-	8400 5100 8400 5150
+	6750 5200 6750 5250
 Wire Wire Line
-	8200 5500 8400 5500
+	6550 5600 6750 5600
 $Comp
 L openair2-rescue:C-everykey C14
 U 1 1 5C3038BD
-P 8250 5950
-F 0 "C14" H 8050 6000 50  0000 L CNN
-F 1 "10u" H 8050 5900 50  0000 L CNN
-F 2 "everykey:0805" H 8288 5800 50  0001 C CNN
-F 3 "" H 8250 5950 50  0000 C CNN
-F 4 "B" H 8250 5950 50  0001 C CNN "jlc extended"
-F 5 "C15850" H 8250 5950 50  0001 C CNN "jlc#"
-F 6 "Samsung Electro-Mechanics" H 8250 5950 50  0001 C CNN "manuf"
-F 7 "CL21A106KAYNNNE" H 8250 5950 50  0001 C CNN "manuf#"
-F 8 "1276-2891-1-ND" H 8250 5950 50  0001 C CNN "digi#"
-F 9 "187-CL21A106KAYNNNE" H 8250 5950 50  0001 C CNN "mouser#"
-	1    8250 5950
+P 6600 6050
+F 0 "C14" H 6400 6100 50  0000 L CNN
+F 1 "10u" H 6400 6000 50  0000 L CNN
+F 2 "everykey:0805" H 6638 5900 50  0001 C CNN
+F 3 "" H 6600 6050 50  0000 C CNN
+F 4 "B" H 6600 6050 50  0001 C CNN "jlc extended"
+F 5 "C15850" H 6600 6050 50  0001 C CNN "jlc#"
+F 6 "Samsung Electro-Mechanics" H 6600 6050 50  0001 C CNN "manuf"
+F 7 "CL21A106KAYNNNE" H 6600 6050 50  0001 C CNN "manuf#"
+F 8 "1276-2891-1-ND" H 6600 6050 50  0001 C CNN "digi#"
+F 9 "187-CL21A106KAYNNNE" H 6600 6050 50  0001 C CNN "mouser#"
+	1    6600 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 5850 8250 5300
-Connection ~ 8250 5300
+	6600 5950 6600 5400
+Connection ~ 6600 5400
 Wire Wire Line
-	8250 6050 8250 6300
-Connection ~ 8250 6300
+	6600 6150 6600 6400
+Connection ~ 6600 6400
 $Comp
 L openair2-rescue:Test_Point-everykey TP11
 U 1 1 5C4AA570
@@ -1769,53 +1631,51 @@ Connection ~ 5650 1450
 $Comp
 L openair2-rescue:R-everykey R4
 U 1 1 5D014545
-P 7200 5850
-F 0 "R4" V 7150 5750 50  0000 C CNN
-F 1 "10K" V 7250 5750 50  0000 C CNN
-F 2 "everykey:0603" H 7200 5850 60  0001 C CNN
-F 3 "" H 7200 5850 60  0000 C CNN
-F 4 "C25804" H 7200 5850 50  0001 C CNN "jlc#"
-F 5 "Stackpole Electronics Inc" H 7200 5850 50  0001 C CNN "manuf"
-F 6 "RMCF0603FT10K0" H 7200 5850 50  0001 C CNN "manuf#"
-F 7 "B" H 7200 5850 50  0001 C CNN "jlc extended"
-F 8 "RMCF0603FT10K0CT-ND" H 7200 5850 50  0001 C CNN "digi#"
-F 9 "Generic" H 7200 5850 50  0001 C CNN "comment"
-F 10 "603-RC0603FR-0710KL" H 7200 5850 50  0001 C CNN "mouser#"
-	1    7200 5850
+P 5550 5950
+F 0 "R4" V 5500 5850 50  0000 C CNN
+F 1 "10K" V 5600 5850 50  0000 C CNN
+F 2 "everykey:0603" H 5550 5950 60  0001 C CNN
+F 3 "" H 5550 5950 60  0000 C CNN
+F 4 "C25804" H 5550 5950 50  0001 C CNN "jlc#"
+F 5 "Stackpole Electronics Inc" H 5550 5950 50  0001 C CNN "manuf"
+F 6 "RMCF0603FT10K0" H 5550 5950 50  0001 C CNN "manuf#"
+F 7 "B" H 5550 5950 50  0001 C CNN "jlc extended"
+F 8 "RMCF0603FT10K0CT-ND" H 5550 5950 50  0001 C CNN "digi#"
+F 9 "Generic" H 5550 5950 50  0001 C CNN "comment"
+F 10 "603-RC0603FR-0710KL" H 5550 5950 50  0001 C CNN "mouser#"
+	1    5550 5950
 	0    1    1    0   
 $EndComp
 $Comp
 L openair2-rescue:R-everykey R5
 U 1 1 5D0146B4
-P 7200 6150
-F 0 "R5" V 7150 6050 50  0000 C CNN
-F 1 "22K" V 7250 6050 50  0000 C CNN
-F 2 "everykey:0603" H 7200 6150 60  0001 C CNN
-F 3 "" H 7200 6150 60  0000 C CNN
-F 4 "C31850" H 7200 6150 50  0001 C CNN "jlc#"
-F 5 "Yageo" H 7200 6150 50  0001 C CNN "manuf"
-F 6 "RC0603FR-0722KL" H 7200 6150 50  0001 C CNN "manuf#"
-F 7 "B" H 7200 6150 50  0001 C CNN "jlc extended"
-F 8 "311-22.0KHRCT-ND" H 7200 6150 50  0001 C CNN "digi#"
-F 9 "603-RC0603FR-0722KL" H 7200 6150 50  0001 C CNN "mouser#"
-F 10 "Generic" H 7200 6150 50  0001 C CNN "comment"
-	1    7200 6150
+P 5550 6250
+F 0 "R5" V 5500 6150 50  0000 C CNN
+F 1 "22K" V 5600 6150 50  0000 C CNN
+F 2 "everykey:0603" H 5550 6250 60  0001 C CNN
+F 3 "" H 5550 6250 60  0000 C CNN
+F 4 "C31850" H 5550 6250 50  0001 C CNN "jlc#"
+F 5 "Yageo" H 5550 6250 50  0001 C CNN "manuf"
+F 6 "RC0603FR-0722KL" H 5550 6250 50  0001 C CNN "manuf#"
+F 7 "B" H 5550 6250 50  0001 C CNN "jlc extended"
+F 8 "311-22.0KHRCT-ND" H 5550 6250 50  0001 C CNN "digi#"
+F 9 "603-RC0603FR-0722KL" H 5550 6250 50  0001 C CNN "mouser#"
+F 10 "Generic" H 5550 6250 50  0001 C CNN "comment"
+	1    5550 6250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7200 6250 7200 6300
-Connection ~ 7350 6300
+	5550 6350 5550 6400
+Connection ~ 5700 6400
 Wire Wire Line
-	7200 5950 7200 6000
+	5550 6050 5550 6100
 Wire Wire Line
-	7200 6000 7000 6000
-Connection ~ 7200 6000
-Text GLabel 7000 6000 0    60   Output ~ 0
-FAN_SENS
+	5550 6100 5350 6100
+Connection ~ 5550 6100
 Wire Wire Line
-	7200 5150 8400 5150
-Connection ~ 8400 5150
-NoConn ~ 7500 5400
+	5550 5250 6750 5250
+Connection ~ 6750 5250
+NoConn ~ 5850 5500
 Wire Wire Line
 	8400 1350 8450 1350
 Wire Wire Line
@@ -1891,16 +1751,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 2350 8250 2350
 Wire Wire Line
-	4850 6050 4850 6150
-Wire Wire Line
-	4850 6150 4950 6150
-Wire Wire Line
-	4850 6150 4850 6250
-Wire Wire Line
-	4750 5450 4750 5950
-Wire Wire Line
-	4850 6250 4850 6300
-Wire Wire Line
 	4200 1400 4200 1500
 Wire Wire Line
 	3000 2150 4200 2150
@@ -1921,133 +1771,39 @@ Wire Wire Line
 Wire Wire Line
 	9500 2600 10250 2600
 Wire Wire Line
-	8400 5800 8400 5850
+	6750 5900 6750 5950
 Wire Wire Line
-	8400 6100 8400 6300
+	6750 6200 6750 6400
 Wire Wire Line
-	7200 5700 7200 5750
+	5550 5800 5550 5850
 Wire Wire Line
-	7350 5300 7500 5300
+	5700 5400 5850 5400
 Wire Wire Line
-	8400 6300 8400 6350
+	6750 6400 6750 6450
 Wire Wire Line
-	7500 6300 8250 6300
+	5850 6400 6600 6400
 Wire Wire Line
 	1300 1800 1300 2100
 Wire Wire Line
-	5800 5250 5800 5450
+	6600 5400 6550 5400
 Wire Wire Line
-	8250 5300 8200 5300
-Wire Wire Line
-	8250 6300 8400 6300
+	6600 6400 6750 6400
 Wire Wire Line
 	7200 1250 7300 1250
 Wire Wire Line
 	5650 1450 5950 1450
 Wire Wire Line
-	7350 6300 7500 6300
+	5700 6400 5850 6400
 Wire Wire Line
-	7200 6000 7200 6050
+	5550 6100 5550 6150
 Wire Wire Line
-	8400 5150 8400 5300
+	6750 5250 6750 5400
 Wire Wire Line
 	3550 3500 3950 3500
 Wire Wire Line
 	3550 3300 4050 3300
 Wire Wire Line
 	2450 1250 2450 1400
-Wire Wire Line
-	2750 5900 2750 6000
-Wire Wire Line
-	2750 5450 2750 5500
-Wire Wire Line
-	2750 5750 2750 5900
-Wire Wire Line
-	2750 5450 3050 5450
-Wire Wire Line
-	3650 5600 3900 5600
-Wire Wire Line
-	3650 5500 3900 5500
-Connection ~ 2750 5900
-Wire Wire Line
-	3750 5900 2750 5900
-Wire Wire Line
-	3750 5700 3750 5900
-Wire Wire Line
-	3650 5700 3750 5700
-Connection ~ 2750 5450
-Wire Wire Line
-	2750 5300 2750 5450
-Connection ~ 2750 5750
-Wire Wire Line
-	3050 5750 2750 5750
-Wire Wire Line
-	2750 5700 2750 5750
-NoConn ~ 3050 5650
-NoConn ~ 3050 5550
-Text GLabel 4650 5850 0    60   Input ~ 0
-RFM_SEL
-Text Notes 3100 5100 0    60   ~ 0
-TEMP/HUMIDITY
-Text GLabel 3900 5600 2    60   Input ~ 0
-SDA
-Text GLabel 3900 5500 2    60   Input ~ 0
-SCL
-$Comp
-L openair2-rescue:C-everykey C5
-U 1 1 5976A1D1
-P 2750 5600
-F 0 "C5" H 2550 5650 50  0000 L CNN
-F 1 "0u1" H 2550 5550 50  0000 L CNN
-F 2 "everykey:0603" H 2788 5450 50  0001 C CNN
-F 3 "" H 2750 5600 50  0000 C CNN
-F 4 "B" H 2750 5600 50  0001 C CNN "jlc extended"
-F 5 "C14663" H 2750 5600 50  0001 C CNN "jlc#"
-F 6 "YAGEO" H 2750 5600 50  0001 C CNN "manuf"
-F 7 "CC0603KRX7R9BB104" H 2750 5600 50  0001 C CNN "manuf#"
-F 8 "311-1344-1-ND" H 2750 5600 50  0001 C CNN "digi#"
-F 9 "603-CC603KRX7R9BB104" H 2750 5600 50  0001 C CNN "mouser#"
-	1    2750 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L openair2-rescue:3.3V-everykey #PWR015
-U 1 1 59769FBC
-P 2750 5300
-F 0 "#PWR015" H 2775 5250 60  0001 C CNN
-F 1 "3.3V" H 2750 5450 50  0000 C CNN
-F 2 "" H 2750 5300 60  0000 C CNN
-F 3 "" H 2750 5300 60  0000 C CNN
-	1    2750 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L openair2-rescue:GND-everykey #PWR014
-U 1 1 59769F36
-P 2750 6000
-F 0 "#PWR014" H 2775 6050 60  0001 C CNN
-F 1 "GND" H 2750 5850 50  0000 C CNN
-F 2 "" H 2750 6000 60  0000 C CNN
-F 3 "" H 2750 6000 60  0000 C CNN
-	1    2750 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L openair2-rescue:SI7006-A20-everykey IC5
-U 1 1 59769EA6
-P 3350 5600
-F 0 "IC5" H 3350 5950 50  0000 C CNN
-F 1 "SI7006-A20" H 3350 5850 50  0000 C CNN
-F 2 "everykey:SI7006-A20" H 3350 5600 60  0001 C CNN
-F 3 "" H 3350 5600 60  0000 C CNN
-F 4 "E" H 3350 5600 50  0001 C CNN "jlc extended"
-F 5 "C155480" H 3350 5600 50  0001 C CNN "jlc#"
-F 6 "Silicon Labs" H 3350 5600 50  0001 C CNN "manuf"
-F 7 "SI7006-A20-IM1R" H 3350 5600 50  0001 C CNN "manuf#"
-F 8 "DNP" H 3350 5600 50  0001 C CNN "digi#"
-	1    3350 5600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 2700 10250 2700
 Wire Wire Line
@@ -2316,4 +2072,250 @@ Wire Wire Line
 Connection ~ 2450 1400
 Wire Wire Line
 	2450 1400 2450 1500
+Text Notes 7150 6400 0    60   ~ 0
+R3 was intended to disable the \nfan during boot, but pulling this \npin low conflicts with initialisation. \n(see section "Strapping pins" in \nWROOM datasheet)
+$Comp
+L openair2-rescue:SI7006-A20-everykey IC5
+U 1 1 59769EA6
+P 1400 5600
+F 0 "IC5" H 1400 5950 50  0000 C CNN
+F 1 "SI7006-A20" H 1400 5850 50  0000 C CNN
+F 2 "everykey:SI7006-A20" H 1400 5600 60  0001 C CNN
+F 3 "" H 1400 5600 60  0000 C CNN
+F 4 "E" H 1400 5600 50  0001 C CNN "jlc extended"
+F 5 "C155480" H 1400 5600 50  0001 C CNN "jlc#"
+F 6 "Silicon Labs" H 1400 5600 50  0001 C CNN "manuf"
+F 7 "SI7006-A20-IM1R" H 1400 5600 50  0001 C CNN "manuf#"
+F 8 "DNP" H 1400 5600 50  0001 C CNN "digi#"
+	1    1400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L openair2-rescue:GND-everykey #PWR014
+U 1 1 59769F36
+P 800 6000
+F 0 "#PWR014" H 825 6050 60  0001 C CNN
+F 1 "GND" H 800 5850 50  0000 C CNN
+F 2 "" H 800 6000 60  0000 C CNN
+F 3 "" H 800 6000 60  0000 C CNN
+	1    800  6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L openair2-rescue:3.3V-everykey #PWR015
+U 1 1 59769FBC
+P 800 5300
+F 0 "#PWR015" H 825 5250 60  0001 C CNN
+F 1 "3.3V" H 800 5450 50  0000 C CNN
+F 2 "" H 800 5300 60  0000 C CNN
+F 3 "" H 800 5300 60  0000 C CNN
+	1    800  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L openair2-rescue:C-everykey C5
+U 1 1 5976A1D1
+P 800 5600
+F 0 "C5" H 600 5650 50  0000 L CNN
+F 1 "0u1" H 600 5550 50  0000 L CNN
+F 2 "everykey:0603" H 838 5450 50  0001 C CNN
+F 3 "" H 800 5600 50  0000 C CNN
+F 4 "B" H 800 5600 50  0001 C CNN "jlc extended"
+F 5 "C14663" H 800 5600 50  0001 C CNN "jlc#"
+F 6 "YAGEO" H 800 5600 50  0001 C CNN "manuf"
+F 7 "CC0603KRX7R9BB104" H 800 5600 50  0001 C CNN "manuf#"
+F 8 "311-1344-1-ND" H 800 5600 50  0001 C CNN "digi#"
+F 9 "603-CC603KRX7R9BB104" H 800 5600 50  0001 C CNN "mouser#"
+	1    800  5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1950 5500 2    60   Input ~ 0
+SCL
+Text GLabel 1950 5600 2    60   Input ~ 0
+SDA
+Text Notes 1150 5100 0    60   ~ 0
+TEMP/HUMIDITY
+Text GLabel 2700 5850 0    60   Input ~ 0
+RFM_SEL
+NoConn ~ 1100 5550
+NoConn ~ 1100 5650
+Wire Wire Line
+	800  5700 800  5750
+Wire Wire Line
+	1100 5750 800  5750
+Connection ~ 800  5750
+Wire Wire Line
+	800  5300 800  5450
+Connection ~ 800  5450
+Wire Wire Line
+	1700 5700 1800 5700
+Wire Wire Line
+	1800 5700 1800 5900
+Wire Wire Line
+	1800 5900 800  5900
+Connection ~ 800  5900
+Wire Wire Line
+	1700 5500 1950 5500
+Wire Wire Line
+	1700 5600 1950 5600
+Wire Wire Line
+	800  5450 1100 5450
+Wire Wire Line
+	800  5750 800  5900
+Wire Wire Line
+	800  5450 800  5500
+Wire Wire Line
+	800  5900 800  6000
+Wire Wire Line
+	3850 5250 3850 5450
+Wire Wire Line
+	2900 6250 2900 6300
+Wire Wire Line
+	2800 5450 2800 5950
+Wire Wire Line
+	2900 6150 2900 6250
+Wire Wire Line
+	2900 6150 3000 6150
+Wire Wire Line
+	2900 6050 2900 6150
+Text GLabel 5350 6100 0    60   Output ~ 0
+FAN_SENS
+Wire Wire Line
+	3850 5450 3800 5450
+Connection ~ 3850 5250
+Wire Wire Line
+	3900 5250 3850 5250
+Wire Wire Line
+	3850 5150 3850 5250
+$Comp
+L openair2-rescue:Test_Point-everykey TP9
+U 1 1 5C1FCAF8
+P 3850 5050
+F 0 "TP9" V 3950 4900 50  0000 C CNN
+F 1 "ANT" V 3850 4900 50  0000 C CNN
+F 2 "everykey:HEADER-1x01" H 3850 5050 60  0001 C CNN
+F 3 "" H 3850 5050 60  0000 C CNN
+	1    3850 5050
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3800 5750
+Text Notes 3300 5100 0    60   ~ 0
+LORA
+Connection ~ 2900 6250
+Wire Wire Line
+	3900 6250 3900 5350
+Wire Wire Line
+	2900 6250 3900 6250
+Connection ~ 2800 5450
+Wire Wire Line
+	2800 5350 2800 5450
+Wire Wire Line
+	3800 5650 3950 5650
+Wire Wire Line
+	3800 6150 3950 6150
+Connection ~ 2900 6150
+Wire Wire Line
+	2800 6150 2900 6150
+Wire Wire Line
+	3800 5550 3950 5550
+Wire Wire Line
+	3000 5850 2700 5850
+Wire Wire Line
+	3000 5750 2700 5750
+Wire Wire Line
+	3000 5650 2700 5650
+Wire Wire Line
+	3000 5550 2700 5550
+Wire Wire Line
+	2800 5450 3000 5450
+Connection ~ 2900 6050
+Wire Wire Line
+	3000 6050 2900 6050
+Wire Wire Line
+	2900 5950 3000 5950
+Wire Wire Line
+	2900 5950 2900 6050
+Text GLabel 2700 5650 0    60   Input ~ 0
+MOSI
+Text GLabel 2700 5550 0    60   Output ~ 0
+MISO
+$Comp
+L openair2-rescue:CONN_2-everykey ANT1
+U 1 1 599F0583
+P 4050 5300
+F 0 "ANT1" H 4050 5450 50  0000 C CNN
+F 1 "CONN_2" H 4050 5100 50  0001 C CNN
+F 2 "everykey:U-FL" H 4050 5300 60  0001 C CNN
+F 3 "DNP" H 4050 5300 60  0000 C CNN
+F 4 "TE" H 4050 5300 50  0001 C CNN "manuf"
+F 5 "1909763-1" H 4050 5300 50  0001 C CNN "manuf#"
+F 6 "A118077CT-ND" H 4050 5300 50  0001 C CNN "digi#"
+F 7 "571-1909763-1" H 4050 5300 50  0001 C CNN "mouser#"
+	1    4050 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L openair2-rescue:C-everykey C13
+U 1 1 599EF309
+P 2800 6050
+F 0 "C13" H 2600 6100 50  0000 L CNN
+F 1 "0u1" H 2600 5950 50  0000 L CNN
+F 2 "everykey:0603" H 2838 5900 50  0001 C CNN
+F 3 "" H 2800 6050 50  0000 C CNN
+F 4 "B" H 2800 6050 50  0001 C CNN "jlc extended"
+F 5 "C14663" H 2800 6050 50  0001 C CNN "jlc#"
+F 6 "YAGEO" H 2800 6050 50  0001 C CNN "manuf"
+F 7 "CC0603KRX7R9BB104" H 2800 6050 50  0001 C CNN "manuf#"
+F 8 "311-1344-1-ND" H 2800 6050 50  0001 C CNN "digi#"
+F 9 "603-CC603KRX7R9BB104" H 2800 6050 50  0001 C CNN "mouser#"
+	1    2800 6050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 6050
+NoConn ~ 3800 5950
+NoConn ~ 3800 5850
+Text GLabel 3950 5650 2    60   BiDi ~ 0
+RFM_DIO1
+Text GLabel 3950 6150 2    60   Input ~ 0
+RFM_RST
+$Comp
+L openair2-rescue:RFM95W-everykey IC6
+U 1 1 599DC582
+P 3400 5750
+F 0 "IC6" H 3400 6250 50  0000 C CNN
+F 1 "RFM95W" H 3400 6150 50  0000 C CNN
+F 2 "everykey:RFM95W-SMD" H 3400 5750 60  0001 C CNN
+F 3 "DNP" H 3400 5750 60  0001 C CNN
+F 4 "HopeRF" H 3400 5750 50  0001 C CNN "manuf"
+F 5 "RFM95W-868S2" H 3400 5750 50  0001 C CNN "manuf#"
+F 6 "DNP" H 3400 5750 50  0001 C CNN "digi#"
+	1    3400 5750
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 5550 2    60   BiDi ~ 0
+RFM_DIO0
+Text GLabel 2700 5750 0    60   Input ~ 0
+SCK
+$Comp
+L openair2-rescue:GND-everykey #PWR021
+U 1 1 59786BE2
+P 2900 6300
+F 0 "#PWR021" H 2925 6350 60  0001 C CNN
+F 1 "GND" H 2900 6150 50  0000 C CNN
+F 2 "" H 2900 6300 60  0000 C CNN
+F 3 "" H 2900 6300 60  0000 C CNN
+	1    2900 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L openair2-rescue:3.3V-everykey #PWR020
+U 1 1 59786B4A
+P 2800 5350
+F 0 "#PWR020" H 2825 5300 60  0001 C CNN
+F 1 "3.3V" H 2800 5500 50  0000 C CNN
+F 2 "" H 2800 5350 60  0000 C CNN
+F 3 "" H 2800 5350 60  0000 C CNN
+	1    2800 5350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
